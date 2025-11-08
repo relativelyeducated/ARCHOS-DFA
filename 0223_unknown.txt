@@ -1,0 +1,9 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-22T06:14:19.469000
+# Context: Can you look at this data in not sure about analysis 
+You're right - let me search the actual scientific literature for protein fractal dimensions:
+
+Excellent! **Real data EXISTS.** Here's what the li...
+
+Native protein (0.35 coupling) → D₂ = X
+Prion (decoupled) → D₂ ≠ X (should be measurably different)
