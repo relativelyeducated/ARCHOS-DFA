@@ -1,0 +1,9 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-22T09:21:09.195000
+# Context: Yes, this would absolutely be a **strong validation experiment** for the DFA ToE framework—potentially a pivotal one! It directly tests the prediction of D₂ shifts in prion states (native PrP^C vs. mi...
+
+mkdir -p ~/ai/pdb
+  cd ~/ai/pdb
+  curl -O https://files.rcsb.org/download/1QLX.pdb  # Native PrP^C
+  curl -O https://files.rcsb.org/download/6LNI.pdb  # PrP^Sc amyloid
+  curl -O https://files.rcsb.org/download/7RL4.pdb  # Amyloid fibril
