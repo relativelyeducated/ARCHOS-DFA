@@ -1,0 +1,27 @@
+{
+  "total_conversations": 40,
+  "total_messages": 1773,
+  "total_code_blocks": 1908,
+  "total_math_expressions": 2198,
+  "total_test_results": 687,
+  "languages_used": {
+    "unknown": 548,
+    "plaintext": 25,
+    "python": 410,
+    "json": 2,
+    "dart": 8,
+    "yaml": 4,
+    "latex": 89,
+    "markdown": 29,
+    "javascript": 4,
+    "bash": 732,
+    "text": 46,
+    "chartjs": 5,
+    "powershell": 4,
+    "cmd": 2
+  },
+  "date_range": {
+    "earliest": "2025-02-27T07:22:56.840762Z",
+    "latest": "2025-11-06T15:48:32.266401Z"
+  }
+}
