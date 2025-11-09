@@ -1,0 +1,14 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T15:17:58.938000
+# Context: # BRIEFING: SIMULATION OF ENTROPIC GRAVITY IN DIALECTIC ARCHESTRUCTURE (DA)
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 3:17 PM CDT, we simulated entropic gravity integrated into the Dialectic A...
+
+trial,timestep,da_pull,born_pull,entropy_gradient,arch_formed
+  0,0,0.1234,0.0333,0.5004,0
+  0,250,0.4567,0.0333,0.4567,1
+  ...
+  49,999,1.2345,0.0333,0.2345,0

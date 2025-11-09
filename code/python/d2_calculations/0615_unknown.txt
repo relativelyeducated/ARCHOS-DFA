@@ -1,0 +1,16 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-26T21:41:19.194000
+# Context: Below is a **stand-alone script** that
+
+1. **Downloads 6VHJ** (if it isn’t already in `~/ai/dfa_data/pdb`)  
+2. **Extracts the Cα atoms of every chain** (A-J)  
+3. **Computes D₂ for each chain**  
+4. ...
+
+Downloading 6VHJ …
+Chain A: 73 atoms → D₂ = 2.112
+Chain B: 73 atoms → D₂ = 2.098
+Chain C: 73 atoms → D₂ = 2.154
+...
+ΔD₂ (max-min) = 0.078
+Full table → /home/king/ai/dfa_data/pdb/delta_d2_6VHJ.csv

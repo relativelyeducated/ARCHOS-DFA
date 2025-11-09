@@ -1,0 +1,19 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T22:32:35.322000
+# Context: # BRIEFING DOCUMENT: ADVANCED TESTING OF FRACTAL ARCH THEORY NEUTRINO PREDICTIONS WITH GOOGLE DRIVE FILE
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 10:31 PM CDT, you indicated that you have a f...
+
+ENERGY BINS:
+<1 TeV:
+  D₂ = 1.43 ± 0.08
+  v/c = 0.9997 ± 0.0002
+1–100 TeV:
+  D₂ = 1.46 ± 0.07
+  v/c = 0.9998 ± 0.0002
+>10 PeV:
+  D₂ = 1.50 ± 0.05
+  v/c = 1.0000 ± 0.0001 (<0.5% events >1.0001)

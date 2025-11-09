@@ -1,0 +1,15 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-06T21:41:50.588000
+# Context: # SIMULATION EXECUTION & RESULTS: IMPROVED DIALECTIC ARCHESTRUCTURE (DA) SIMULATION
+
+---
+
+## OVERVIEW
+
+Based on the previous unified simulation results, which showed a lower-than-expected surplus rati...
+
+trial,timestep,da_surplus,da_tension,da_mutation_occ,darwin_surplus
+  0,0,0.6032,0.45,0,1.9668
+  0,10,0.7896,0.40,1,2.1077
+  ...
+  49,99,4.1123,0.25,0,2.5344

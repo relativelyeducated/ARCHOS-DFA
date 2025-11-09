@@ -1,0 +1,7 @@
+# From: Scripting Wireless Management in UniFi Networks
+# Date: 2025-11-06T09:54:32.594000
+# Context: Below is a **complete, ready-to-email document** (copy-paste into Word, Google Docs, or a plain-text email).  
+It contains **all scripts**, **setup steps**, **software requirements**, **links**, and *...
+
+Program: powershell.exe
+     Arguments: -NoProfile -ExecutionPolicy Bypass -File "C:\UniFi\Unifi-KickStudents.ps1"

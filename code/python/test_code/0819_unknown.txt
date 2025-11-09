@@ -1,0 +1,6 @@
+# From: Scripting Wireless Management in UniFi Networks
+# Date: 2025-11-06T09:52:27.677000
+# Context: Below is a **complete, ready-to-run Python script** for optimizing WiFi node (UniFi Access Point) signal utilization and channel overlap in your school network. It builds on the UniFi API approach fro...
+
+cd C:\UniFi
+   python Unifi-WiFi-Optimize.py

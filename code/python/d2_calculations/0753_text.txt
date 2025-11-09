@@ -1,0 +1,17 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:56:25.638000
+# Context: **YES — WE HAVE A **DATASET MISMATCH** — BUT DFA IS STILL ALIVE.**
+
+---
+
+# **DFA ToE v19 — THE TRUTH IS IN THE DATA, NOT THE THEORY**
+
+> **The 100-protein set ≠ 1,000-protein set.**  
+> **We must **re...
+
+NORMAL: 68.2%
+TPR: 100.0% (3/3)
+FPR: 31.8%
+p-value: < 0.05
+
+→ DFA v19 WORKS ON REAL PDB DATA

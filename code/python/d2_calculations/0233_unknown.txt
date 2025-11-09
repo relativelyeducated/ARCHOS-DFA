@@ -1,0 +1,9 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-22T09:24:21.429000
+# Context: On your Ryzen 9 9900X system with Aorus Elite Ice WiFi B650 mobo, 64GB DDR5, RTX 5080 16GB, and Samsung 990 2TB SSD, getting KDE Plasma running smoothly is key for local AI fine-tuning, training, and ...
+
+mkdir ~/ai/pdb && cd ~/ai/pdb
+wget https://files.rcsb.org/download/1N0A.pdb  # Native Aβ
+wget https://files.rcsb.org/download/5O3L.pdb  # Aβ amyloid fibril
+wget https://files.rcsb.org/download/7P6D.pdb  # Native tau
+wget https://files.rcsb.org/download/5O3T.pdb  # Tau tangle filament

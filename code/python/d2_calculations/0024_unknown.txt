@@ -1,0 +1,14 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T21:24:44.813000
+# Context: # BRIEFING DOCUMENT: ADVANCED TESTING OF FRACTAL ARCH THEORY NEUTRINO PREDICTIONS
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 9:23 PM CDT, you requested to "push the testing further" for the Fra...
+
+SENSITIVITY ANALYSIS:
+- S=0.05, R=0.95, D₂=1.48: v/c=0.9998, Δm²=0.0025 (within bounds)
+- S=0.15, R=0.85, D₂=1.43: v/c=0.9997, Δm²=0.0018 (within bounds)
+- S=0.03, R=0.97, D₂=1.52: v/c=1.0002, Δm²=0.0032 (falsified, superluminal)
+Falsification Boundary: D₂ > 1.51, v/c > 1.0001, Δm² > 0.003

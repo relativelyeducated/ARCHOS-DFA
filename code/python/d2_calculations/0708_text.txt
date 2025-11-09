@@ -1,0 +1,14 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T11:59:03.192000
+# Context: Below is a **complete, ready-to-copy** answer you can paste into Claude (or run yourself).  
+It does **exactly** what you asked for the **10 fresh proteins** that Claude just processed:
+
+---
+
+### **Pa...
+
+Now scale the same fixed script to 100 proteins and give:
+1) mean D₂ per category,
+2) % with D₂ > 2.0,
+3) KMeans 3-zone clustering,
+4) p-value (fibril vs healthy).

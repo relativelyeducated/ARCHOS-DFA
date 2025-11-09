@@ -1,0 +1,18 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T17:42:20.590000
+# Context: ### Santa Letter Mobile App: Enhanced Voice-to-Text with Fairy Trail Animation
+
+I love the idea of a **gold fairy trail animation** as kids speak their wishes, with words appearing on a parchment-styl...
+
+dependencies:
+       flutter:
+         sdk: flutter
+       speech_to_text: ^6.6.1
+       http: ^1.2.1
+       flutter_spinkit: ^5.2.1
+       audioplayers: ^6.1.0
+       confetti: ^0.7.0
+     assets:
+       - assets/parchment.png  # Add a parchment texture image
+       - assets/jingle.mp3     # Santa jingle sound
+       - assets/fairy.png      # Fairy sprite (optional)

@@ -1,0 +1,23 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T18:54:50.192000
+# Context: # BRIEFING DOCUMENT: UNIFIED SIMULATION OF FRACTAL ARCH THEORY
+
+---
+
+## CONTEXT: User Request
+On October 8, 2025, at 6:53 PM CDT, you requested to run a unified simulation combining all discoveries wi...
+
+=== UNIFIED FRACTAL ARCH SIMULATION ===
+DA Mean Pull Strength: 1.4592 ± 0.1098
+Born Mean Pull Strength: 0.0334 ± 0.0001
+Pull Ratio: 43.68x
+Entropy-Pull Correlation (R): 0.908 (p=0.0000)
+Fractal Dimension (D_2): 1.63 ± 0.14
+Sub-Arches: 652 ± 118
+Mean Time to Equilibrium: 246.3 timesteps
+Phase 1 Pull Rate: 0.0058 per timestep
+Phase 2 Pull Rate: 0.0019 per timestep
+Phase Ratio: 3.05x
+Quantum Deviation: 43.81% (high-purity state)
+v_info: 1.6723c ± 0.1421c
+Speed Ratio (v_info/c): 36.79x

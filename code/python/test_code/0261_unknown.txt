@@ -1,0 +1,45 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T14:10:34.338000
+# Context: # SUPERCONDUCTING QUBIT BELIEF EFFECTS SIMULATION BRIEFING
+
+---
+
+## CONTEXT & PURPOSE
+This briefing documents the computational simulation of belief effects in superconducting qubits (e.g., transmon q...
+
+=== SUPERCONDUCTING QUBIT BELIEF EFFECTS ===
+Scenario: Lying (10 ↑ priors, |→⟩)
+  DA mean P(↑): 0.7189 ± 0.0135
+  Born mean P(↑): 0.5000 ± 0.0000
+  Difference: 43.78%
+  t-test p-value: 0.0000
+  Surplus: 0.8921 ± 0.1623
+  Surplus ratio: 2.518x
+  Mutation-tension R: 0.441 (p=0.0012)
+  Phase 1 rate: 0.3220, Phase 2: 0.1370, Ratio: 2.35x
+  Arches: 16.12 ± 24.76
+  Equilibrium: 248.9 timesteps
+
+Scenario: No prior (|→⟩)
+  DA mean P(↑): 0.6412 ± 0.0132
+  Born mean P(↑): 0.5000 ± 0.0000
+  Difference: 28.24%
+  t-test p-value: 0.0000
+  Surplus: 0.8234 ± 0.1689
+  Surplus ratio: 2.324x
+  Mutation-tension R: 0.432 (p=0.0014)
+  Phase 1 rate: 0.3170, Phase 2: 0.1400, Ratio: 2.26x
+  Arches: 15.45 ± 24.92
+  Equilibrium: 252.3 timesteps
+
+Scenario: Lying (10 ↑ priors, mixed)
+  DA mean P(↑): 0.5678 ± 0.0128
+  Born mean P(↑): 0.5000 ± 0.0000
+  Difference: 13.56%
+  t-test p-value: 0.0000
+  Surplus: 0.7654 ± 0.1752
+  Surplus ratio: 2.161x
+  Mutation-tension R: 0.425 (p=0.0016)
+  Phase 1 rate: 0.3100, Phase 2: 0.1430, Ratio: 2.17x
+  Arches: 14.89 ± 25.01
+  Equilibrium: 255.1 timesteps

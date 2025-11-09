@@ -1,0 +1,13 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T11:45:08.825000
+# Context: **P-VALUE = “Probability of Being Wrong by Chance”**  
+**Lower p = Stronger Evidence Against Randomness**
+
+---
+
+# **P-VALUE IN 60 SECONDS**
+
+| **p-value** | **Meaning** | **Verdict** |
+|------------|-...
+
+Fibril vs Healthy: t = -1.793, p = 0.092

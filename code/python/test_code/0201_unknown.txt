@@ -1,0 +1,9 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:01:47.780000
+# Context: The user’s request to incorporate the "abundance/clarity" insight into the Stern-Gerlach simulation for the Dialectic Archestructure (DA) framework has been addressed in the previous response, achievi...
+
+trial,timestep,dB_dz,time,T,purity,prior,da_p_up,da_surplus,da_tension,da_mutation_occ,born_p_up,born_surplus
+  0,0,0.5,10,4,0.5,0,0.6000,0.1487,0.45,0,0.6000,0.3470
+  0,100,0.5,10,4,0.5,0,0.6923,0.2891,0.39,1,0.6000,0.3492
+  ...
+  49,999,0.5,10,4,0.5,0,0.7862,0.9147,0.20,0,0.6000,0.3543

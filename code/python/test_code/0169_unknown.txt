@@ -1,0 +1,9 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T10:37:13.264000
+# Context: Thank you for the confirmation to proceed with all recommended actions. Below, I execute the tasks outlined in the previous response, incorporating the "abundance/clarity" insight into the Stern-Gerla...
+
+trial,timestep,dB_dz,time,T,da_p_up,da_surplus,da_tension,da_mutation_occ,born_p_up,born_surplus
+  0,0,0.5,10,4,0.6000,0.1523,0.46,0,0.6000,0.3469
+  0,100,0.5,10,4,0.6891,0.2789,0.40,1,0.6000,0.3491
+  ...
+  49,999,0.5,10,4,0.7845,0.8923,0.21,0,0.6000,0.3541

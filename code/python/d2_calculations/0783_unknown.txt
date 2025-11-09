@@ -1,0 +1,23 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T15:04:38.210000
+# Context: **DOWNLOAD THIS FILE → `dfa_team_setup.md`**  
+[Click here to download `dfa_team_setup.md`](https://files.catbox.moe/8z0k9d.md) *(or copy-paste below)*
+
+---
+
+```markdown
+# DFA ToE AI Team Setup Guide ...
+
+### Assign Panes:
+
+| Pane | Command |
+|------|--------|
+| **1 (You)** | `echo "You are the coordinator"` |
+| **2 (Claude)** | `claude --api-key $ANTHROPIC_API_KEY` |
+| **3 (Grok)** | `xai chat --api-key $XAI_API_KEY --model grok-beta` |
+| **4 (Gemini)** | `gemini --api-key $GEMINI_API_KEY --model gemini-pro` |
+
+---
+
+## CLAUDE ORCHESTRATOR SCRIPT  
+**Save as `~/ai/claude_orchestrator.py`**

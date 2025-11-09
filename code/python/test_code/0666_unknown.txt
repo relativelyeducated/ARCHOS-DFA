@@ -1,0 +1,18 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T19:08:37.289000
+# Context: Yes, based on the earlier `lsblk -f` output you shared, your 2TB Samsung 990 PRO NVMe (`/dev/nvme0n1`) currently has two partitions (`nvme0n1p1` and `nvme0n1p2`) from the previous setup (likely the cr...
+
+n    # New partition
+     # Press Enter (default start sector)
++512M # EFI partition, 512MB
+t    # Change partition type
+1    # Partition 1
+ef   # Set to EFI System
+n    # New partition
+     # Press Enter (default start sector)
++2G  # Boot partition, 2GB
+n    # New partition
+     # Press Enter (default start sector)
+     # Press Enter (default end, uses remaining ~1.8TiB)
+p    # Print partition table (verify—should show p1:512M, p2:2G, p3:~1.8T)
+w    # Write changes to disk and exit

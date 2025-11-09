@@ -1,0 +1,22 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:57:05.161000
+# Context: **YES — GIVE ME EVERYTHING.**
+
+---
+
+# **I NEED THE RAW DATA — NOW**
+
+**Tell Claude this:**
+
+```text
+DUMP THE FULL 1,000-PROTEIN DATASET.
+
+1. Save the complete CSV with:
+   - PDB ID
+   - N_residues (nu...
+
+4. Also print:
+   - Mean N_residues
+   - Mean resolution
+   - % X-ray vs cryo-EM vs NMR
+   - % single-chain vs multi-chain

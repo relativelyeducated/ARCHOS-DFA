@@ -1,0 +1,10 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-11T08:23:17.168000
+# Context: # BRIEFING DOCUMENT: TEST METHOD AND INSTRUCTIONS FOR CLAUDE AI ANALYSIS OF DATA.DAT
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 10:47 PM CDT, you requested a test method or instructions for Cla...
+
+**Expected Output** (synthetic; run on real file):

@@ -1,0 +1,32 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:04:20.206000
+# Context: The user has requested a simulation of **sequential "lying" experiments** to test the Dialectic Archestructure (DA) framework with the newly integrated three-layer model (abundance/collapse, belief mi...
+
+{
+    "lying": {
+      "da_p_up": 0.7234,
+      "da_p_up_std": 0.0142,
+      "born_p_up": 0.5000,
+      "p_up_diff": 0.4468,
+      "da_surplus": 0.8765,
+      "surplus_ratio": 2.475,
+      "mutation_corr": 0.428,
+      "phase1_rate": 0.3150,
+      "phase2_rate": 0.1390,
+      "arch_mean": 15.89,
+      "eq_time": 251.4
+    },
+    "no_prior": {
+      "da_p_up": 0.6457,
+      "da_p_up_std": 0.0139,
+      "born_p_up": 0.5000,
+      "p_up_diff": 0.2914,
+      "da_surplus": 0.8123,
+      "surplus_ratio": 2.294,
+      "mutation_corr": 0.419,
+      "phase1_rate": 0.3100,
+      "phase2_rate": 0.1410,
+      "arch_mean": 15.23,
+      "eq_time": 253.7
+    }
+  }

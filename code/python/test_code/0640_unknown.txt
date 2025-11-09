@@ -1,0 +1,21 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T18:57:16.944000
+# Context: Ah, got it—thanks for clarifying! The Samsung 990 PRO is indeed a beast of an NVMe SSD, and the 2TB model has a **total raw capacity of ~1.818 TiB** (1,863,000,000,000 bytes, or 2,000,000,000,000 byte...
+
+g    # Create GPT table (wipes everything)
+n    # New partition
+1    # Partition 1
+     # Default start sector
++512M # EFI - 512MB
+t    # Change type
+1    # Partition 1
+ef   # EFI System
+n    # New partition
+2    # Partition 2
+     # Default start sector
++2G  # Boot - 2GB
+n    # New partition
+3    # Partition 3
+     # Default start sector
+     # Default end (uses all remaining ~1.8TiB)
+w    # WRITE changes & EXIT

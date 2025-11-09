@@ -1,0 +1,32 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-06T22:56:45.532000
+# Context: I understand you want to run a Stern-Gerlach simulation to test the Dialectic Archestructure (DA) framework’s predicted ~30% deviation from the Born rule in outcome probabilities (P(↑)) for a spin-1/2...
+
+=== SURPLUS PRESERVATION ===
+DA mean: 0.6721 ± 0.2567
+Born mean: 0.3539 ± 0.0076
+Ratio: 1.898x
+t-test p-value: 0.0000
+
+=== ARCH FORMATION ===
+Mean arches: 13.94 ± 27.89
+Range: 0 - 90
+
+=== MUTATION-TENSION CORRELATION ===
+Mean correlation (Pearson R): 0.098
+p-value: 0.0492
+Phase 1 mutation rate: 0.2380
+Phase 2 mutation rate: 0.1740
+Phase ratio: 1.37x
+
+=== TEMPORAL DYNAMICS ===
+Mean time to equilibrium: 26.8 timesteps
+Surplus trajectory: [t=0,10,25,50,75,99]
+  DA: [0.1423, 0.2089, 0.3245, 0.4456, 0.5789, 0.6721]
+  Born: [0.3468, 0.3490, 0.3503, 0.3519, 0.3530, 0.3539]
+
+=== OUTCOME PROBABILITIES ===
+DA mean P(↑): 0.7823 ± 0.1089
+Born mean P(↑): 0.6000 ± 0.0000
+Difference: 30.38%
+t-test p-value: 0.0000

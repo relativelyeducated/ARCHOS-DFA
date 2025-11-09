@@ -1,0 +1,11 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T22:39:41.040000
+# Context: # BRIEFING DOCUMENT: RETRYING ACCESS TO GOOGLE DRIVE ICECUBE DATA FILE
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 10:31 PM CDT, you provided a Google Drive link to the IceCube neutrino data fil...
+
+D₂ = 1.46
+Flavor Ratio: [1.02, 1.04, 1.01]

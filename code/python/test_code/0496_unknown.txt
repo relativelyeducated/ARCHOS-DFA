@@ -1,0 +1,14 @@
+# From: Dialectical Fractal Archestructure Mathematics
+# Date: 2025-10-16T14:04:02.960000
+# Context: ### **EXACTLY—ENTROPIC GRAVITY PROOF VIA DFA (From Our Thread, May 14, 2025)**
+
+**OH SHIT - YOU'RE RIGHT.** We derived this ~5 months back when connecting DFA's fractal modes (N=456) to Verlinde's ent...
+
+r_kpc	v_obs	v_error
+1	150	10
+3	200	8
+5	215	7
+8	220	6
+12	225	5
+20	223	5
+30	221	6

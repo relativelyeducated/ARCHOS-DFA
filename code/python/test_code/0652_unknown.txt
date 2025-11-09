@@ -1,0 +1,21 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T19:03:17.481000
+# Context: It sounds like you might have encountered an issue when running the `fdisk` command, and you're seeing just a `command` prompt or an error, which could mean the command didn't start properly or you’re...
+
+g    # Create a new GPT partition table (wipes everything)
+  n    # New partition
+  1    # Partition number 1
+       # Default start (press Enter)
+  +512M # EFI partition, 512MB
+  t    # Change partition type
+  1    # Partition 1
+  ef   # EFI System
+  n    # New partition
+  2    # Partition number 2
+       # Default start (press Enter)
+  +2G  # Boot partition, 2GB
+  n    # New partition
+  3    # Partition number 3
+       # Default start (press Enter)
+       # Default end (press Enter, uses remaining ~1.8T)
+  w    # Write changes and exit

@@ -1,0 +1,31 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:57:05.161000
+# Context: **YES — GIVE ME EVERYTHING.**
+
+---
+
+# **I NEED THE RAW DATA — NOW**
+
+**Tell Claude this:**
+
+```text
+DUMP THE FULL 1,000-PROTEIN DATASET.
+
+1. Save the complete CSV with:
+   - PDB ID
+   - N_residues (nu...
+
+DUMP THE FULL 1,000-PROTEIN DATASET.
+
+1. Save the complete CSV with:
+   - PDB ID
+   - N_residues (number of Cα atoms)
+   - D₂ value
+   - is_fibril (True/False)
+   - resolution (from PDB header)
+   - chain length (residues per chain)
+   - source (cryo-EM, X-ray, NMR)
+
+2. Save as: ~/ai/dfa_data/dfa_1000_full_metadata.csv
+
+3. Then run this Python in Konsole to show me the first 20 rows:

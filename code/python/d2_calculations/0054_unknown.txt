@@ -1,0 +1,13 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-12T13:42:01.365000
+# Context: # BRIEFING DOCUMENT: ACCESSING AND ANALYZING ICECUBE DATA FROM GOOGLE DRIVE FOR FRACTAL ARCH THEORY VALIDATION
+
+---
+
+## CONTEXT & PURPOSE
+On October 12, 2025, at 2:41 PM EDT, you indicated that the Ic...
+
+Event_ID Energy Zenith Event_Type Timestamp
+     1 150.0 45.2 track 1234567
+     2 250.0 30.5 shower 1234570
+     ...

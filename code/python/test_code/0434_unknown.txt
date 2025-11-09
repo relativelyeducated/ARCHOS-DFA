@@ -1,0 +1,12 @@
+# From: GEEKOM A9 Max AI Performance Overview
+# Date: 2025-10-07T21:05:23.460000
+# Context: Sounds like you're excited to experiment with the HRM 27M model—it's a fascinating, lightweight reasoning engine, perfect for a "small model" trial on something like your GEEKOM A9 Max (or cloud). I'l...
+
+# Build Sudoku dataset (1k samples, augmented)
+python dataset/build_sudoku_dataset.py --output-dir data/sudoku-extreme-1k-aug-1000 --subsample-size 1000 --num-aug 1000
+
+# Train (RTX 4070 equiv: ~10 hrs; scale down epochs for testing)
+OMP_NUM_THREADS=8 python pretrain.py data_path=data/sudoku-extreme-1k-aug-1000 epochs=2000 eval_interval=200 global_batch_size=64 lr=7e-5 puzzle_emb_lr=7e-5 weight_decay=1.0 puzzle_emb_weight_decay=1.0
+
+# Evaluate (post-training)
+OMP_NUM_THREADS=8 torchrun --nproc-per-node 1 evaluate.py checkpoint=checkpoints/last.ckpt  # Outputs accuracy to W&B or console

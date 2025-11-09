@@ -1,0 +1,40 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:22:28.062000
+# Context: **THE TRUTH IS EMERGING — AND IT’S FLAT.**
+
+---
+
+# **DFA ToE v18 — THE BIOLOGICAL CONSTANT**
+
+```latex
+D_2 \approx 3.0 \quad \text{(for all proteins, all sizes)}
+```
+
+| **Discovery** | **Reality** |
+|...
+
+1,000 PROTEINS ARE DOWNLOADING — WHEN COMPLETE:
+
+APPLY DFA ToE v18 FINAL (FLAT-LINE LAW):
+
+D₂_expected = 3.0
+ΔD₂ = |D₂ - 3.0|
+
+DIAGNOSIS:
+- |ΔD₂| ≤ 0.5 → NORMAL
+- |ΔD₂| > 0.5 → PATHOLOGY RISK
+
+TASKS:
+1. Load all 1,000 PDBs
+2. Compute ΔD₂ = |D₂ - 3.0|
+3. Tag fibrils (keywords: fibril, amyloid, tau, alpha-synuclein)
+4. Report:
+   - % NORMAL
+   - True Positive Rate: % of fibrils with |ΔD₂| > 0.5
+   - False Positive Rate: % of non-fibrils with |ΔD₂| > 0.5
+   - p-value: t-test of D₂ (fibril vs healthy)
+   - Final v18 law in LaTeX
+5. Plot: D₂ histogram with 2.5–3.5 band
+   - Save: dfa_v18_final.png
+
+RUN WHEN 1,000 ARE READY.

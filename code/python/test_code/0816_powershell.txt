@@ -1,0 +1,107 @@
+# From: Scripting Wireless Management in UniFi Networks
+# Date: 2025-11-06T09:50:57.687000
+# Context: Below is a **complete, ready-to-run PowerShell script** that you can drop on a **Windows-based UniFi Network Application server** (the machine that runs the UniFi Controller software).  
+
+It does two ...
+
+<#=====================================================================
+  UniFi Student-Kick Script
+  • Kicks clients with inappropriate hostnames
+  • Kicks clients on a given SSID during restricted hours
+  • Logs everything to C:\UniFi\KickLog.txt
+=====================================================================#>
+
+# -------------------  CONFIGURATION  -------------------
+$Controller   = "https://127.0.0.1:8443"      # Local controller (use FQDN/IP if remote)
+$ApiKey       = "YOUR_API_KEY_HERE"          # <-- put your API key here
+$Site         = "default"                    # change if you use a different site
+
+# Bad-name list (case-insensitive)
+$BadNames = @(
+    "sex", "porn", "drugs", "hack", "admin", "root", "f*ck", "sh*t"
+    # add/remove words – partial match works
+)
+
+# Restricted SSID & time window (24-h format)
+$RestrictedSSID   = "Student-WiFi"           # exact SSID name
+$StartHour        = 17                       # 17:00 = 5 PM
+$EndHour          =  7                       # 07:00 = 7 AM (next day)
+
+# Log file
+$LogFile = "C:\UniFi\KickLog.txt"
+# ---------------------------------------------------------
+
+# Ensure log folder exists
+if (-not (Test-Path (Split-Path $LogFile))) { New-Item -ItemType Directory -Path (Split-Path $LogFile) -Force }
+
+function Write-Log {
+    param([string]$Msg)
+    $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    "$ts - $Msg" | Out-File -FilePath $LogFile -Append -Encoding utf8
+    Write-Host "$ts $Msg"
+}
+
+# Build headers (UniFi API v2 uses X-API-Key)
+$headers = @{
+    "X-API-Key" = $ApiKey
+    "Content-Type" = "application/json"
+}
+
+# -------------------------------------------------
+# Helper: Get all currently connected clients
+function Get-Clients {
+    $url = "$Controller/api/s/$Site/stat/sta"
+    try {
+        $resp = Invoke-RestMethod -Uri $url -Headers $headers -Method Get -SkipCertificateCheck
+        return $resp.data
+    } catch {
+        Write-Log "ERROR fetching clients: $($_.Exception.Message)"
+        return @()
+    }
+}
+
+# Helper: Kick a client by MAC
+function Kick-Client {
+    param([string]$Mac)
+    $url = "$Controller/api/s/$Site/cmd/stamgr"
+    $body = @{ cmd = "kick-sta"; mac = $Mac.ToLower() } | ConvertTo-Json
+    try {
+        Invoke-RestMethod -Uri $url -Headers $headers -Method Post -Body $body -SkipCertificateCheck | Out-Null
+        Write-Log "KICKED $Mac"
+    } catch {
+        Write-Log "FAILED to kick $Mac : $($_.Exception.Message)"
+    }
+}
+
+# -------------------------------------------------
+# MAIN LOGIC
+$now = Get-Date
+$hour = $now.Hour
+$inRestrictedWindow = ($hour -ge $StartHour) -or ($hour -lt $EndHour)
+
+$clients = Get-Clients
+
+foreach ($c in $clients) {
+    $mac      = $c.mac
+    $hostname = ($c.hostname ?? "").Trim()
+    $ssid     = $c.essid ?? ""
+
+    # 1. Bad-name check
+    $bad = $false
+    foreach ($word in $BadNames) {
+        if ($hostname -match "(?i)$word") { $bad = $true; break }
+    }
+    if ($bad) {
+        Write-Log "BAD NAME '$hostname' ($mac) on $ssid"
+        Kick-Client $mac
+        continue
+    }
+
+    # 2. Time-based SSID kick
+    if ($inRestrictedWindow -and $ssid -eq $RestrictedSSID) {
+        Write-Log "TIME RESTRICTION: $mac on $RestrictedSSID"
+        Kick-Client $mac
+    }
+}
+
+Write-Log "Scan complete. $($clients.Count) clients processed."

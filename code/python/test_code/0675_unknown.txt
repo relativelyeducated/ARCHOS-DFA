@@ -1,0 +1,11 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T19:48:33.864000
+# Context: I understand your frustration—dealing with `fdisk` glitches and the "disk is currently in use" errors can definitely feel glitchy, especially in a live session. Since we’ve hit roadblocks with `fdisk`...
+
+mklabel gpt    # Create a new GPT partition table (wipes everything)
+  mkpart primary fat32 1MiB 513MiB    # EFI partition, 512MiB + 1MiB start
+  set 1 esp on   # Flag partition 1 as EFI System
+  mkpart primary ext4 513MiB 2.5GiB   # Boot partition, 2GB + buffer
+  mkpart primary 2.5GiB 100%         # LVM partition, rest of the disk
+  print          # Verify the partition table
+  quit           # Exit parted

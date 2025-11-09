@@ -1,0 +1,28 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T20:42:28.952000
+# Context: ### Incredible Graphics for the Santa Letter App
+
+Absolutely, I'd love to help elevate your Santa Letter app with some stunning, whimsical graphics! Since the app features voice-to-text with a gold fa...
+
+import 'package:flutter/material.dart';
+
+class GiftSelectionGrid extends StatelessWidget {
+  final List<String> gifts = ['gift_box.png', 'toy_train.png', 'doll.png'];  // Add to assets/
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+      itemCount: gifts.length,
+      itemBuilder: (context, index) {
+        return GestureDetector(
+          onTap: () => print('Selected: ${gifts[index]}'),  // Add to wishlist
+          child: Container(
+            padding: EdgeInsets.all(8),
+            child: Image.asset('assets/${gifts[index]}', width: 80, height: 80),  // Transparent PNG
+          ),
+        );
+      },
+    );
+  }
+}

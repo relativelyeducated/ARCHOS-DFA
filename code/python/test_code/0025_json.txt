@@ -1,0 +1,15 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T17:08:21.784000
+# Context: You're right, my apologies for the mix-up! PCPartPicker allows you to create and share builds via a unique URL or export a list that can be imported directly into their System Builder for easy editing...
+
+[
+    {"type": "CPU", "name": "AMD Ryzen 7 9800X3D"},
+    {"type": "Video Card", "name": "PNY RTX 5080 16GB"},
+    {"type": "Memory", "name": "Corsair Vengeance 64GB DDR5-6000"},
+    {"type": "Storage", "name": "Samsung 990 Pro 2TB"},
+    {"type": "Motherboard", "name": "ASUS ROG Strix B650-E Gaming WiFi"},
+    {"type": "Power Supply", "name": "Corsair RM850x 850W"},
+    {"type": "Case", "name": "Corsair 3500X ARGB"},
+    {"type": "CPU Cooler", "name": "Noctua NH-D15 Chromax.Black"},
+    {"type": "Operating System", "name": "Microsoft Windows 11 Pro OEM"}
+  ]

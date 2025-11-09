@@ -1,0 +1,18 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T22:57:59.981000
+# Context: # BRIEFING DOCUMENT: CONFIRMATION OF FILE ACCESS FOR ICECUBE DATA ANALYSIS
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 10:47 PM CDT, you provided a new GitHub link to the IceCube neutrino data f...
+
+Rows: 336516
+Energy range: 100 to 100000000 GeV
+Zenith range: 0.0 to 180.0 degrees
+   Event_ID    Energy  Zenith Event_Type  Timestamp
+0         1  150.0   45.2     track      1234567
+1         2  250.0  -30.5    shower      1234570
+...
+D₂ = 1.46
+Sample exported.

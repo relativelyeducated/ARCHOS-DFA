@@ -1,0 +1,20 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T11:59:03.192000
+# Context: Below is a **complete, ready-to-copy** answer you can paste into Claude (or run yourself).  
+It does **exactly** what you asked for the **10 fresh proteins** that Claude just processed:
+
+---
+
+### **Pa...
+
+You just ran DFA D₂ analysis on 10 fresh proteins from the RCSB API.  
+Please answer the following **exactly** (no extra commentary):
+
+1. List the **10 exact PDB IDs** (one per line, e.g. `1ABC`).
+2. For each PDB, give **Category** (membrane, cytosolic, fibril, designed, other), **Resolution (Å)**, **# of residues**, **D₂ value**.
+3. How many of the 10 have **D₂ > 2.0**?
+4. Are there **any healthy cytosolic proteins** with **D₂ < 2.0**?
+5. One-sentence verdict: **Does this 10-protein result support or challenge** the DFA rule *“D₂ > 2.0 = pathology risk”*?
+
+After that, answer **one more**:
+   - “Is the smoke alarm working? YES/NO and why (max 15 words).”

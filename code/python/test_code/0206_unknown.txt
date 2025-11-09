@@ -1,0 +1,18 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:01:47.780000
+# Context: The user’s request to incorporate the "abundance/clarity" insight into the Stern-Gerlach simulation for the Dialectic Archestructure (DA) framework has been addressed in the previous response, achievi...
+
+/DA-Quantum
+  ├── code/
+  │   └── quantum_da_sim.py  # Complete model code
+  ├── data/
+  │   ├── raw_data.csv
+  │   └── summary.json
+  ├── plots/
+  │   ├── p_up_vs_dBdz_belief.png
+  │   ├── p_up_vs_time_belief.png
+  │   ├── p_up_vs_temperature_belief.png
+  │   ├── p_up_vs_purity_belief.png
+  │   ├── surplus_time_belief.png
+  │   └── arch_histogram_belief.png
+  ├── README.md

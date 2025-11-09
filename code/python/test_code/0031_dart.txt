@@ -1,0 +1,329 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T17:42:20.590000
+# Context: ### Santa Letter Mobile App: Enhanced Voice-to-Text with Fairy Trail Animation
+
+I love the idea of a **gold fairy trail animation** as kids speak their wishes, with words appearing on a parchment-styl...
+
+import 'dart:convert';
+import 'dart:math';
+import 'package:flutter/material.dart';
+import 'package:speech_to_text/speech_to_text.dart' as stt;
+import 'package:http/http.dart' as http;
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:confetti/confetti.dart';
+
+void main() => runApp(SantaApp());
+
+class SantaApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Santa\'s Voice Wish Workshop',
+      theme: ThemeData(primarySwatch: Colors.red),
+      home: LoginScreen(),
+    );
+  }
+}
+
+// Parent Login Screen
+class LoginScreen extends StatefulWidget {
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  final _userController = TextEditingController(text: 'mom');
+  final _passController = TextEditingController(text: 'santa123');
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.ac_unit, size: 100, color: Colors.red), // Snow icon
+            Text('Parent Login', style: TextStyle(fontSize: 24)),
+            TextField(controller: _userController, decoration: InputDecoration(labelText: 'User')),
+            TextField(controller: _passController, obscureText: true, decoration: InputDecoration(labelText: 'Pass')),
+            ElevatedButton(
+              onPressed: () {
+                if (_userController.text == 'mom' && _passController.text == 'santa123') {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => SetupScreen()));
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Try mom/santa123')));
+                }
+              },
+              child: Text('Sign In'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// Parent Setup (Budget/Age)
+class SetupScreen extends StatefulWidget {
+  @override
+  _SetupScreenState createState() => _SetupScreenState();
+}
+
+class _SetupScreenState extends State<SetupScreen> {
+  double budget = 50;
+  int age = 5;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Set Up Wish')),
+      body: Column(
+        children: [
+          Slider(value: budget, min: 0, max: 200, onChanged: (v) => setState(() => budget = v)),
+          Text('Budget: \$${budget.toInt()}'),
+          Slider(value: age.toDouble(), min: 3, max: 12, onChanged: (v) => setState(() => age = v.toInt())),
+          Text('Child Age: $age'),
+          ElevatedButton(
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ChildScreen(budget: budget.toInt(), age: age))),
+            child: Text('Start Voice Wish!'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Child Voice Input with Fairy Trail
+class ChildScreen extends StatefulWidget {
+  final int budget;
+  final int age;
+  ChildScreen({required this.budget, required this.age});
+
+  @override
+  _ChildScreenState createState() => _ChildScreenState();
+}
+
+class _ChildScreenState extends State<ChildScreen> with TickerProviderStateMixin {
+  final stt.SpeechToText _speech = stt.SpeechToText();
+  bool _isListening = false;
+  String _customText = '';
+  List<Map<String, dynamic>> _gifts = [];
+  bool _isLoading = false;
+  final AudioPlayer _player = AudioPlayer();
+  late AnimationController _fairyController;
+  double _fairyX = 0;
+  List<String> _words = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _initSpeech();
+    _searchGifts();
+    _fairyController = AnimationController(vsync: this, duration: Duration(seconds: 2))..repeat();
+  }
+
+  void _initSpeech() async {
+    await _speech.initialize();
+  }
+
+  void _listen() async {
+    if (!_isListening) {
+      await _speech.listen(onResult: (result) {
+        setState(() {
+          _customText = result.recognizedWords;
+          _words = _customText.split(' '); // Split for animation
+          _fairyX = 0; // Reset fairy position
+        });
+      });
+    } else {
+      await _speech.stop();
+    }
+    setState(() => _isListening = !_isListening);
+  }
+
+  Future<void> _searchGifts() async {
+    setState(() => _isLoading = true);
+    // Mock Amazon API call (replace with your keys)
+    final accessKey = 'YOUR_ACCESS_KEY';
+    final secretKey = 'YOUR_SECRET_KEY';
+    final associateTag = 'YOUR_TAG';
+    final endpoint = 'https://webservices.amazon.com/paapi5/us/search-items';
+    final payload = json.encode({
+      'Keywords': 'toys for ${widget.age} year old',
+      'MinPrice': (0 * 100).toString(),
+      'MaxPrice': (widget.budget * 100).toString(),
+      'Resources': ['ItemInfo.Title', 'Offers.Listings.Price', 'ItemLinks.ItemLink'],
+      'PartnerTag': associateTag,
+      'PartnerType': 'Associates',
+      'Marketplace': 'www.amazon.com'
+    });
+
+    // Simplified HTTP (use aws_signature_v4 for full)
+    final response = await http.post(Uri.parse(endpoint), body: payload, headers: {'Content-Type': 'application/json'});
+    if (response.statusCode == 200) {
+      final data = json.decode(response.body);
+      final gifts = (data['SearchResult']?['Items'] as List?)?.take(5).map((item) => {
+        'name': item['ItemInfo']['Title']['DisplayValue'],
+        'price': (item['Offers']['Listings'][0]['Price']['Amount'] / 100).toInt(),
+        'link': item['DetailPageURL'],
+        'selected': false,
+      }).toList() ?? [];
+      setState(() => _gifts = gifts);
+    }
+    setState(() => _isLoading = false);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Voice Your Wish! 🎅')),
+      body: Column(
+        children: [
+          // Voice Input
+          Row(
+            children: [
+              IconButton(
+                icon: Icon(_isListening ? Icons.mic : Icons.mic_none, color: Colors.red),
+                onPressed: _listen,
+              ),
+              Expanded(child: Text(_customText.isEmpty ? 'Speak to the fairy...' : _customText)),
+            ],
+          ),
+          // Parchment with Fairy Trail
+          Container(
+            height: 200,
+            child: CustomPaint(
+              painter: ParchmentPainter(_words, _fairyController.value),
+              child: Container(),
+            ),
+          ),
+          // Gift Cards
+          Expanded(
+            child: _isLoading
+                ? SpinKitFadingCircle(color: Colors.red)
+                : ListView.builder(
+                    itemCount: _gifts.length,
+                    itemBuilder: (context, i) {
+                      final gift = _gifts[i];
+                      return Card(
+                        child: ListTile(
+                          title: Text(gift['name']),
+                          subtitle: Text('\$${gift['price']}'),
+                          trailing: ElevatedButton(
+                            onPressed: () {
+                              if ((gift['selected'] ? 0 : gift['price']) + _gifts.fold(0, (s, g) => s + (g['selected'] ? g['price'] : 0)) <= widget.budget) {
+                                setState(() => _gifts[i]['selected'] = !gift['selected']);
+                              }
+                            },
+                            child: Text(gift['selected'] ? 'Remove' : 'Add'),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => LetterScreen(gifts: _gifts.where((g) => g['selected']).toList(), custom: _customText))),
+            child: Text('Build & Send Letter!'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Parchment & Fairy Trail Painter
+class ParchmentPainter extends CustomPainter {
+  final List<String> words;
+  final double fairyProgress;
+  ParchmentPainter(this.words, this.fairyProgress);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    // Draw parchment (load texture)
+    final parchment = Paint()..color = Colors.white; // Replace with ImageShader for assets/parchment.png
+    canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), parchment);
+
+    // Draw words with fade-in
+    var x = 10.0, y = 20.0;
+    for (int i = 0; i < words.length; i++) {
+      final textPainter = TextPainter(
+        text: TextSpan(text: words[i], style: TextStyle(fontSize: 16, color: Colors.black)),
+        textDirection: TextDirection.ltr,
+      )..layout();
+      if (i / words.length < fairyProgress) {
+        textPainter.paint(canvas, Offset(x, y));
+        x += textPainter.width + 5;
+        if (x > size.width - 50) {
+          x = 10;
+          y += 20;
+        }
+      }
+    }
+
+    // Fairy trail (gold sparkles)
+    final fairyX = size.width * fairyProgress;
+    final fairyY = y + sin(fairyProgress * 2 * pi) * 10; // Wavy motion
+    final sparklePaint = Paint()..color = Colors.yellow.withOpacity(0.8);
+    for (int i = 0; i < 10; i++) {
+      final offset = Offset(fairyX - i * 5, fairyY + Random().nextDouble() * 10 - 5);
+      canvas.drawCircle(offset, 3 - i * 0.2, sparklePaint..color = sparklePaint.color.withOpacity(1 - i / 10));
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+}
+
+// Letter Build & Send
+class LetterScreen extends StatelessWidget {
+  final List<Map<String, dynamic>> gifts;
+  final String custom;
+  LetterScreen({required this.gifts, required this.custom});
+
+  @override
+  Widget build(BuildContext context) {
+    final confetti = ConfettiController(duration: Duration(seconds: 3));
+    return Scaffold(
+      appBar: AppBar(title: Text('Your Magic Letter')),
+      body: Stack(
+        children: [
+          Column(
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      ...gifts.map((g) => Text('- ${g['name']} \$${g['price']}')),
+                      Text('Special Wish: $custom'),
+                      Slider(value: 0.7, onChanged: (v) {}), // Naughty/Nice
+                      Text('Mostly Nice!'),
+                    ],
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () async {
+                  confetti.play(); // Roll & whisk animation
+                  final wishlist = {'gifts': gifts, 'custom': custom, 'links': gifts.map((g) => g['link']).toList()};
+                  await File('wishlist.json').writeAsString(json.encode(wishlist));
+                  final player = AudioPlayer();
+                  await player.play(AssetSource('jingle.mp3'));
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Sent to Santa! Links saved. 🎅')));
+                  Navigator.popUntil(context, (route) => route.isFirst);
+                },
+                child: Text('Send to North Pole!'),
+              ),
+            ],
+          ),
+          ConfettiWidget(
+            confettiController: confetti,
+            blastDirectionality: BlastDirectionality.explosive,
+            colors: [Colors.red, Colors.green, Colors.gold],
+          ),
+        ],
+      ),
+    );
+  }
+}

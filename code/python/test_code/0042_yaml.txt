@@ -1,0 +1,12 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T20:48:10.759000
+# Context: My apologies for missing the mark! I understand you want a **Grok Imagine prompt** to create images that look like **in-game screenshots** of the **Deep Tech Handler’s screen** in *Operative Echo: Neu...
+
+assets:
+  - assets/handler_screenshot.png
+  - assets/cam_feed.png
+  - assets/upload_panel.png
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.1.0  # For cyberpunk audio

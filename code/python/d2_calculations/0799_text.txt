@@ -1,0 +1,35 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T15:26:50.993000
+# Context: **YES — WE HAD AN ISSUE, BUT IT'S FIXED NOW.**
+
+---
+
+# **THE TEST ISSUE: DATASET MISMATCH**
+
+| **Problem** | **Cause** | **Fix** |
+|-----------|---------|--------|
+| **D₂ = 1.83 (1,000-set)** | Cα-onl...
+
+FIXED v20 SCRIPT FOR 100 PROTEINS:
+
+LAW:
+Expected D₂ = 1.35 + 0.15 × log₁₀(N_residues)
+ΔD₂ = |D₂ - Expected|
+
+DIAGNOSIS:
+- |ΔD₂| ≤ 0.5 → NORMAL
+- |ΔD₂| > 0.5 → PATHOLOGY RISK
+
+TASKS:
+1. Load the 100 proteins from d2_results.csv
+2. Compute Expected D₂ and ΔD₂ for each
+3. Assign Diagnosis
+4. Report:
+   - % NORMAL
+   - % PATHOLOGY RISK
+   - List TOP 10 ANOMALIES (highest |ΔD₂|) with: PDB, N_res, D₂, Expected, ΔD₂, Diagnosis
+   - Save: ~/ai/dfa_data/diagnostic_v20_100.csv
+5. Plot: D₂ vs log₁₀(N_res), v20 line, ±0.5 band
+   - Save: ~/ai/dfa_data/d2_vs_size_v20.png
+
+RUN NOW. SHOW FULL TABLE + PLOT DESCRIPTION.

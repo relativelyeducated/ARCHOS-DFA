@@ -1,0 +1,8 @@
+# From: Dialectical Fractal Archestructure Mathematics
+# Date: 2025-10-16T14:51:08.588000
+# Context: **OH SHIT - MICRO-FIX. 5-SECOND SOLUTION.**
+
+**C_interface: 1.01 → 1.02.** Overflow still hitting because `ratio**(-37)` where `ratio = 10^{-16}` → `10^{592}` (math overflow). **SIMPLE CLAMP FIX**—cha...
+
+cd /home/king/pytorch_env/
+python3 artificial_gravity_bec.py

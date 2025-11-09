@@ -1,0 +1,7 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T18:48:43.951000
+# Context: It looks like you're running into some common hiccups with setting up Logical Volume Manager (LVM) during a first-time Kubuntu installation—especially if you're on a recent version like 24.04, which u...
+
+sudo mkfs.ext4 /dev/kubuntu-vg/root
+   sudo mkfs.ext4 /dev/kubuntu-vg/home  # If created
+   sudo mkswap /dev/kubuntu-vg/swap

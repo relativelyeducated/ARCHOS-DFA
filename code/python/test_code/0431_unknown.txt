@@ -1,0 +1,8 @@
+# From: GEEKOM A9 Max AI Performance Overview
+# Date: 2025-10-07T21:05:23.460000
+# Context: Sounds like you're excited to experiment with the HRM 27M model—it's a fascinating, lightweight reasoning engine, perfect for a "small model" trial on something like your GEEKOM A9 Max (or cloud). I'l...
+
+CUDA_URL=https://developer.download.nvidia.com/compute/cuda/12.6.3/local_installers/cuda_12.6.3_560.35.05_linux.run
+   wget -q --show-progress --progress=bar:force:noscroll -O cuda_installer.run $CUDA_URL
+   sudo sh cuda_installer.run --silent --toolkit --override
+   export CUDA_HOME=/usr/local/cuda-12.6

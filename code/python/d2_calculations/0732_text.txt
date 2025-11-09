@@ -1,0 +1,34 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:17:11.853000
+# Context: **THE THEORETICAL LAW IS WRONG — BUT DFA IS STILL ALIVE.**
+
+---
+
+# **DFA ToE v18 — DATA-DRIVEN LAW (REALITY OVER THEORY)**
+
+```latex
+D_{2,\text{actual}} = 2.488 + 0.168 \cdot \log_{10}(N_{\text{residu...
+
+APPLY DFA ToE v18 TO THE 1,000 PROTEINS YOU'RE DOWNLOADING.
+
+LAW:
+D₂_expected = 2.488 + 0.168 × log₁₀(N_residues)
+ΔD₂ = |D₂ - Expected|
+
+DIAGNOSIS:
+- |ΔD₂| ≤ 0.5 → NORMAL
+- |ΔD₂| > 0.5 → PATHOLOGY RISK
+
+TASKS:
+1. When 1,000 PDBs are done:
+   - Compute ΔD₂ for each
+   - Tag fibrils (keywords: fibril, amyloid, tau, alpha-synuclein)
+2. Report:
+   - True Positive Rate: % of fibrils with ΔD₂ > 0.5
+   - False Positive Rate: % of non-fibrils with ΔD₂ > 0.5
+   - p-value: t-test ΔD₂ (fibril vs healthy)
+   - Final v18 law in LaTeX
+3. Plot: D₂ vs log(N), v18 line, ±0.5 band
+   - Save: d2_vs_size_v18.png
+
+RUN NOW.

@@ -1,0 +1,6 @@
+# From: Local Image Generation Setup Guide
+# Date: 2025-10-17T00:50:28.789000
+# Context: ### Overview
+Your setup (AMD Ryzen 9 9900X CPU, NVIDIA RTX 5080 GPU with 16GB VRAM, 64GB RAM, KDE Plasma on Linux) is excellent for local AI image generation. The RTX 5080's high VRAM and CUDA cores w...
+
+python entry_with_update.py  # Or just 'python main.py' after first run

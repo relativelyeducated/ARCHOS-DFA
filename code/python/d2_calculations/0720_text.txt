@@ -1,0 +1,42 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:07:18.909000
+# Context: **YES — GIVE CLAUDE THE FULL v17 SPEC NOW.**
+
+---
+
+# **COPY-PASTE THIS TO CLAUDE (EXACTLY)**
+
+```text
+DFA ToE v17 — SIZE-ADJUSTED ANOMALY DETECTION
+
+NEW LAW:
+Expected D₂ = 1.0 + 0.8 × log₁₀(N_residues...
+
+DFA ToE v17 — SIZE-ADJUSTED ANOMALY DETECTION
+
+NEW LAW:
+Expected D₂ = 1.0 + 0.8 × log₁₀(N_residues)
+ΔD₂ = |D₂ - Expected|
+
+DIAGNOSIS:
+- |ΔD₂| ≤ 0.5 → NORMAL
+- ΔD₂ > +0.5 → HYPER-COMPLEX (potential fibril seed / oncogenic)
+- ΔD₂ < -0.5 → UNDER-COMPLEX (aggregation risk / missing regulation)
+
+TASK:
+1. Run DFA v17 on 1,000 fresh PDBs from RCSB API:
+   - Resolution < 2.5 Å
+   - 30–2,000 residues
+   - Protein-only
+2. For each PDB:
+   - Compute: Expected D₂, ΔD₂, Diagnosis
+   - Tag: is_fibril (yes/no) using keyword search: "fibril", "amyloid", "tau", "alpha-synuclein"
+3. Results:
+   - % of healthy proteins with |ΔD₂| ≤ 0.5 (true normal rate)
+   - % of fibrils with |ΔD₂| > 0.5 (true positive rate)
+   - p-value: ΔD₂ distribution (fibril vs healthy)
+   - Final fit: D₂ = a + b × log₁₀(N) + ε
+4. Plot: D₂ vs log₁₀(N_res), color by diagnosis, ±0.5 band
+   - Save as: ~/ai/dfa_data/d2_vs_logN_anomalies.png
+
+Run now. Show full summary table + plot description.

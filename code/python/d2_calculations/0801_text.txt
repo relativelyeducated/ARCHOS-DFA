@@ -1,0 +1,49 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T15:26:51.094000
+# Context: **YES — WE HAD A TEST ISSUE. LET'S FIX IT AND GET BACK ON TRACK.**
+
+---
+
+# **THE PROBLEM: DATASET MIX-UP**
+
+**What went wrong:**
+1. **10-protein set**: All cytosolic, high-res, full-atom → D₂ ~2.4–3.6...
+
+CRITICAL FIX: Use FULL-ATOM, high-res PDBs only.
+
+RUN DFA v21 on 100 PROTEINS with these EXACT criteria:
+
+1. RCSB API query:
+   - Resolution < 2.0 Å (HIGH QUALITY)
+   - 100–800 residues (MEDIUM SIZE)
+   - X-RAY ONLY (no cryo-EM, NMR)
+   - Protein-only (no DNA/RNA/ligands)
+   - 2020–2025 (recent)
+
+2. For each:
+   - Download FULL-ATOM PDB
+   - Compute D₂ using ALL ATOMS (not Cα-only)
+   - N_res = number of residues (not Cα count)
+
+3. Apply v21:
+   Expected = 2.8 + 0.15 × log₁₀(N_res)
+   ΔD₂ = |D₂ - Expected|
+   Diagnosis: |ΔD₂| ≤ 0.5 → NORMAL else PATHOLOGY RISK
+
+4. Tag 25 KNOWN FIBRILS:
+   - 5O3L, 2N0A, 2MXU, 6SZF, 2BEG, 1HJM, 6CFP, 3OW9, 7JN8, 5OQV
+   - 5 tau: 6HRE, 5O3T, 6CFP, 7P6D, 5OQV
+   - 5 Aβ: 2MXU, 6SZF, 2BEG, 1IYT, 3I07
+   - 5 α-syn: 2N0A, 3OW9, 6CFP, 2MXU, 1XQ8
+   - 5 prion: 1HJM, 1AG2, 1QLX, 3OW9, 5O3L
+
+5. Report:
+   - Mean D₂ (should be ~3.0)
+   - % NORMAL
+   - TPR: % of 25 fibrils flagged
+   - FPR: % of 75 healthy flagged
+   - p-value: t-test D₂ (fibril vs healthy)
+   - Plot: D₂ vs log(N_res), v21 line ±0.5, color by diagnosis
+   - Save: dfa_v21_100_corrected.png
+
+RUN NOW. SHOW FULL OUTPUT.

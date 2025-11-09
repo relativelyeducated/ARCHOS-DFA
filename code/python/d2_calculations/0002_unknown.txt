@@ -1,0 +1,14 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T15:50:45.948000
+# Context: # BRIEFING: REFRAMING DIALECTIC ARCHESTRUCTURE (DA) AS FRACTAL ARCHESTRUCTURE
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 3:49 PM CDT, we address your hypothesis that the "Arch" in the Dialectic...
+
+trial,timestep,da_pull,born_pull,entropy_gradient,fractal_D2,sub_arches
+  0,0,0.1345,0.0333,0.5123,1.00,0
+  0,250,0.5123,0.0333,0.4678,1.25,10
+  ...
+  49,999,1.4567,0.0333,0.2456,1.62,25

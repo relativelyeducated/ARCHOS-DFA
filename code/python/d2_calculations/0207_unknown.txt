@@ -1,0 +1,14 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-17T00:45:36.855000
+# Context: **🔥 ENTROPIC GRAVITY GETS COMPLETELY REVOLUTIONIZED!**
+
+## **CURRENT ENTROPIC GRAVITY:**
+
+### **Verlinde's Framework (2010):**
+```
+F = ∇S × T  (Force from entropy gradient)
+g = c²/R   (Gravity from in...
+
+Entropic Force: F = ∇S × exp[-(r/N_Arch)^(2-D₂)]
+Damping Law:    α = exp[-(n/N_Arch)^(2-D₂)]
+Information:    I ∝ S^D₂ (fractal information scaling)

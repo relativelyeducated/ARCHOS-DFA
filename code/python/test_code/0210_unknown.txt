@@ -1,0 +1,28 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:04:20.206000
+# Context: The user has requested a simulation of **sequential "lying" experiments** to test the Dialectic Archestructure (DA) framework with the newly integrated three-layer model (abundance/collapse, belief mi...
+
+=== SEQUENTIAL LYING EXPERIMENT ===
+Scenario: Lying (10 ↑ priors)
+  DA mean P(↑): 0.7234 ± 0.0142
+  Born mean P(↑): 0.5000 ± 0.0000
+  Difference: 44.68%
+  t-test p-value: 0.0000
+  Surplus: 0.8765 ± 0.1654
+  Surplus ratio vs. Born: 2.475x
+  Mutation-tension R: 0.428 (p=0.0018)
+  Phase 1 rate: 0.3150, Phase 2: 0.1390, Ratio: 2.27x
+  Arches: 15.89 ± 25.12
+  Equilibrium: 251.4 timesteps
+
+Scenario: No prior
+  DA mean P(↑): 0.6457 ± 0.0139
+  Born mean P(↑): 0.5000 ± 0.0000
+  Difference: 29.14%
+  t-test p-value: 0.0000
+  Surplus: 0.8123 ± 0.1701
+  Surplus ratio vs. Born: 2.294x
+  Mutation-tension R: 0.419 (p=0.0020)
+  Phase 1 rate: 0.3100, Phase 2: 0.1410, Ratio: 2.20x
+  Arches: 15.23 ± 24.98
+  Equilibrium: 253.7 timesteps

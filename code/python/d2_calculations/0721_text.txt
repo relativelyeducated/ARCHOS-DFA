@@ -1,0 +1,18 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:07:18.909000
+# Context: **YES — GIVE CLAUDE THE FULL v17 SPEC NOW.**
+
+---
+
+# **COPY-PASTE THIS TO CLAUDE (EXACTLY)**
+
+```text
+DFA ToE v17 — SIZE-ADJUSTED ANOMALY DETECTION
+
+NEW LAW:
+Expected D₂ = 1.0 + 0.8 × log₁₀(N_residues...
+
+Now predict:
+1. At 10,000 PDBs: expected true positive rate for fibrils?
+2. Final p-value?
+3. Clinical sensitivity/specificity for neurodegeneration?

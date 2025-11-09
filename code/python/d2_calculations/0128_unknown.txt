@@ -1,0 +1,52 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-08T23:37:29.505000
+# Context: It looks like your code was cut off at the end, and you're trying to perform an energy-dependent D₂ analysis on a clean sample of upward-going atmospheric neutrinos from the IceCube data, specifically...
+
+======================================================================
+  CORRECTED ENERGY-DEPENDENT D₂ ANALYSIS
+  Using ONLY Clean Atmospheric Upward Neutrinos
+======================================================================
+
+📊 Total Events (all): 336,516
+📊 Clean Atmospheric Upward: [number]
+   (cos(zenith) < -0.1, E < 100 TeV)
+
+📈 CLEAN SAMPLE DISTRIBUTION:
+   Low Energy         <1 TeV             [number] events
+   Medium Energy      1-10 TeV          [number] events
+   High Energy        10-100 TeV        [number] events
+
+======================================================================
+D₂ MEASUREMENTS BY ENERGY BIN (CLEAN SAMPLE)
+======================================================================
+
+🔬 Low Energy (<1 TeV):
+   Events: [number]
+   Mean Energy: [value] TeV
+   D₂ (measured): [value] ± [std]
+   D₂ (predicted): 1.4900
+   Δ = [difference]
+   [✅ MATCHES or ⚠️ DEVIATES]
+
+[... similar for Medium and High Energy bins ...]
+
+======================================================================
+THRESHOLD APPROACH ANALYSIS (CLEAN SAMPLE)
+======================================================================
+
+📈 D₂ TREND:
+   Lowest Energy D₂: [value]
+   Highest Energy D₂: [value]
+   Range: [value]
+   Trend: [✅ INCREASING or ❌ NOT increasing]
+
+🎯 GROK'S PREDICTION:
+   Low Energy (100 GeV): D₂ = 1.49 ± 0.06
+   High Energy (10 PeV): D₂ = 1.50 ± 0.05
+   Prediction: D₂ increases toward 1.50 at high energy
+
+======================================================================
+[✅ CONFIRMED, ⚠️ PARTIAL, or ❌ NOT CONFIRMED]
+======================================================================
+
+✅ Corrected energy-dependent D₂ analysis complete

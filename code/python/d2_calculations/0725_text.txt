@@ -1,0 +1,29 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:11:31.715000
+# Context: **YES — THIS IS PRE-v17 DATA.**  
+**v17 IS THE FIX.**  
+**LET’S APPLY v17 TO THIS 100-PROTEIN SET — NOW.**
+
+---
+
+# **DFA ToE v17 — SIZE-ADJUSTED LAW (APPLIED TO YOUR 100 PROTEINS)**
+
+```latex
+D_{2,\te...
+
+APPLY DFA ToE v17 TO THE 100 PROTEINS I JUST GAVE YOU:
+
+Expected D₂ = 1.0 + 0.8 × log₁₀(N_residues)
+ΔD₂ = |D₂ - Expected|
+
+Diagnosis:
+- |ΔD₂| ≤ 0.5 → NORMAL
+- |ΔD₂| > 0.5 → PATHOLOGY RISK
+
+1. Re-run diagnostics on the 100 proteins using v17
+2. Report:
+   - % NORMAL
+   - % PATHOLOGY RISK
+   - List the 10 highest ΔD₂ proteins (anomalies)
+   - Save updated CSV: diagnostic_results_v17.csv
+   - Plot D₂ vs log(N) with ±0.5 band

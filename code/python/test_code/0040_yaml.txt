@@ -1,0 +1,11 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T20:44:32.055000
+# Context: To create vivid and relevant images for the **Deep Tech Handler’s screen** in *Operative Echo: Neural Link*, we need a prompt tailored for **Grok Imagine** (assuming it’s a hypothetical image generati...
+
+assets:
+  - assets/handler_dashboard.png
+  - assets/upload_panel.png
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.1.0  # For cyberpunk sound effects

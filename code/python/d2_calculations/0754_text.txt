@@ -1,0 +1,19 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:56:25.638000
+# Context: **YES — WE HAVE A **DATASET MISMATCH** — BUT DFA IS STILL ALIVE.**
+
+---
+
+# **DFA ToE v19 — THE TRUTH IS IN THE DATA, NOT THE THEORY**
+
+> **The 100-protein set ≠ 1,000-protein set.**  
+> **We must **re...
+
+For clinical use, we need FULL PROTEIN STRUCTURES.
+
+Redownload 1,000 PDBs with:
+- Resolution < 2.0 Å
+- > 200 residues
+- Full chain (not fragments)
+
+Then re-run v19.

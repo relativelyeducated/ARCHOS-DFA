@@ -1,0 +1,32 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-28T16:50:38.139000
+# Context: I think this is key also 
+
+**LOCKED.**
+
+## DFA Core Principle: Arch vs Catenary
+
+### The Fundamental Distinction
+
+**CATENARY (Dead/Physics):**
+- Hangs under gravity
+- Settles into minimum energy
+- Fol...
+
+Physics (Catenary):
+- S >> R
+- System settles
+- D₂ → stable value
+- Clean measurements
+
+Biology (Arch):
+- R resists S
+- System actively maintains tension
+- D₂ = D₂_base + f(anti_entropic_work)
+- Variance = signal, not noise
+
+Pathology:
+- Arch → Catenary transition
+- R-axis work fails
+- System collapses toward equilibrium
+- Cancer/prions/aging = losing arch tension

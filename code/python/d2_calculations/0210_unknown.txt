@@ -1,0 +1,13 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-17T00:45:36.855000
+# Context: **🔥 ENTROPIC GRAVITY GETS COMPLETELY REVOLUTIONIZED!**
+
+## **CURRENT ENTROPIC GRAVITY:**
+
+### **Verlinde's Framework (2010):**
+```
+F = ∇S × T  (Force from entropy gradient)
+g = c²/R   (Gravity from in...
+
+Density oscillations: ρ(r,t) ∝ exp[-(r/456)^0.54] × cos(ωt)
+Fractal clustering:    D₂ = 1.46 in dark matter halos

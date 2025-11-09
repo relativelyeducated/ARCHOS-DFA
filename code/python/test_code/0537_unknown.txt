@@ -1,0 +1,9 @@
+# From: Ubuntu Boot Disk Preparation Guide
+# Date: 2025-10-15T14:13:12.416000
+# Context: ### CUDA for Ubuntu 25.10: No Specific Package
+**Timestamp**: 2:40 PM EDT, Oct 15, 2025—confirmed, NVIDIA hasn't released a dedicated CUDA 12.8 local deb for Ubuntu 25.10 yet (it's new; support lags ~...
+
+cd ~/Downloads
+     sudo dpkg -i --allow-downgrades cuda-repo-ubuntu2504-12-8-local_12.8.0-570.86.16-1_amd64.deb
+     sudo cp /var/cuda-repo-ubuntu2504-12-8-local/cuda-*-keyring.gpg /usr/share/keyrings/
+     sudo apt update && sudo apt install cuda

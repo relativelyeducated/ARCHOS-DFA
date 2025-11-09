@@ -1,0 +1,16 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:13:23.561000
+# Context: **COPY-PASTE THIS ENTIRE BLOCK INTO CLAUDE IN KONSOLE — HE WILL RUN IT IMMEDIATELY:**
+
+```text
+RUN DFA ToE v17 ON THE 100 PROTEINS I JUST GAVE YOU.
+
+LAW:
+Expected D₂ = 1.0 + 0.8 × log₁₀(N_residues)
+ΔD...
+
+Predict at 10,000 PDBs:
+1. Expected True Positive Rate for fibrils
+2. Expected p-value
+3. Clinical sensitivity/specificity for early neurodegeneration detection
+4. Write the final DFA ToE v17 law in LaTeX

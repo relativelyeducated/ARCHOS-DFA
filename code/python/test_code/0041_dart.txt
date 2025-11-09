@@ -1,0 +1,101 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T20:44:32.055000
+# Context: To create vivid and relevant images for the **Deep Tech Handler’s screen** in *Operative Echo: Neural Link*, we need a prompt tailored for **Grok Imagine** (assuming it’s a hypothetical image generati...
+
+import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
+
+class HandlerScreen extends StatefulWidget {
+  @override
+  _HandlerScreenState createState() => _HandlerScreenState();
+}
+
+class _HandlerScreenState extends State<HandlerScreen> {
+  final AudioPlayer _player = AudioPlayer();
+  String selectedUpload = '';
+
+  @override
+  void initState() {
+    super.initState();
+    // Play cyberpunk ambient sound
+    _player.play(AssetSource('audio/cyberpunk_hum.mp3')); // Add to assets/
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          // Main dashboard background
+          Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/handler_dashboard.png'),
+                fit: BoxFit.cover,
+                colorFilter: ColorFilter.mode(
+                  Colors.blue.withOpacity(0.7), // Neon glow
+                  BlendMode.softLight,
+                ),
+              ),
+            ),
+          ),
+          // Upload panel (interactive)
+          Positioned(
+            right: 20,
+            top: 100,
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  selectedUpload = ['Grenade Launcher', 'Holo-Disguise', 'Helo Pilot'][DateTime.now().second % 3];
+                  // Simulate upload push
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Uploading: $selectedUpload to Field HUD')),
+                  );
+                  _player.play(AssetSource('audio/upload_beep.mp3')); // Add sound
+                });
+              },
+              child: Container(
+                width: 200,
+                height: 300,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/upload_panel.png'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    selectedUpload.isEmpty ? 'Tap to Upload' : selectedUpload,
+                    style: TextStyle(color: Colors.yellow, fontSize: 16, fontFamily: 'Courier'),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          // Comms log (static effect)
+          Positioned(
+            bottom: 20,
+            left: 20,
+            child: Container(
+              width: 300,
+              padding: EdgeInsets.all(8),
+              color: Colors.black.withOpacity(0.5),
+              child: Text(
+                DateTime.now().second % 2 == 0
+                    ? 'Field: Req…cam feed…' // Simulated static
+                    : 'Field: Request cam feed!',
+                style: TextStyle(color: Colors.green, fontFamily: 'Courier'),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _player.dispose();
+    super.dispose();
+  }
+}

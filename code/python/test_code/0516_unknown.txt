@@ -1,0 +1,23 @@
+# From: Dialectical Fractal Archestructure Mathematics
+# Date: 2025-10-16T15:17:33.312000
+# Context: Based on our DFA thread and the neutrino oscillation prediction equation:
+
+\[
+P(\nu_e \to \nu_\mu) = \sin^2(2\theta) \sin^2\left( \frac{\Delta m^2 L}{4E} \cdot (1 + C \cdot f_{\text{frac}}(L)) \right)...
+
+L/E	P_osc	P_error
+100	0.95	0.05
+200	0.85	0.04
+300	0.70	0.03
+400	0.55	0.03
+500	0.40	0.02
+600	0.55	0.03
+700	0.70	0.03
+800	0.85	0.04
+900	0.95	0.05
+1000	1.00	0.05
+1200	0.90	0.04
+1500	0.75	0.03
+2000	0.60	0.03
+3000	0.45	0.02
+5000	0.35	0.02

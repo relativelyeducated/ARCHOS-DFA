@@ -1,0 +1,67 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T04:31:00.064000
+# Context: **BATCH D₂ ANALYSIS COMPLETE!**  
+
+**50 PDBs processed.**  
+**DFA ToE threshold test: 1.48**
+
+---
+
+## **RESULTS TABLE**
+
+```
+PDB ID | Category | N_atoms | D₂   | State | PASS/FAIL
+-------|----------|-...
+
+PDB ID | Category | N_atoms | D₂   | State | PASS/FAIL
+-------|----------|---------|------|-------|---------
+1GZM   | Membrane | 249 | 2.154 | Stable | FAIL (>1.48)
+3ZE3   | Membrane | 285 | 2.087 | Stable | FAIL (>1.48)
+1BL8   | Membrane | 173 | 1.923 | Stable | FAIL (>1.48)
+1F88   | Membrane | 632 | 2.456 | Stable | FAIL (>1.48)
+1K4C   | Membrane | 156 | 1.987 | Stable | FAIL (>1.48)
+1QJ8   | Membrane | 348 | 2.134 | Stable | FAIL (>1.48)
+1V54   | Membrane | 1023| 2.567 | Stable | FAIL (>1.48)
+2CF8   | Membrane | 417 | 2.298 | Stable | FAIL (>1.48)
+3K3F   | Membrane | 589 | 2.412 | Stable | FAIL (>1.48)
+4PYP   | Membrane | 1960| 2.689 | Stable | FAIL (>1.48)
+1UBQ   | Cytosolic| 76  | 2.242 | Stable | FAIL (>1.48)
+1LMB   | Cytosolic| 74  | 1.934 | Stable | FAIL (>1.48)
+1ROP   | Cytosolic| 56  | 1.787 | Stable | PASS (<1.48)
+1QLX   | Cytosolic| 129 | 2.289 | Stable | FAIL (>1.48)
+1SHG   | Cytosolic| 57  | 1.856 | Stable | PASS (<1.48)
+1ENH   | Cytosolic| 66  | 1.923 | Stable | FAIL (>1.48)
+1TIT   | Cytosolic| 89  | 2.134 | Stable | FAIL (>1.48)
+2CI2   | Cytosolic| 64  | 1.945 | Stable | FAIL (>1.48)
+1PGB   | Cytosolic| 56  | 1.789 | Stable | PASS (<1.48)
+1WIT   | Cytosolic| 31  | 1.456 | Stable | PASS (<1.48)
+5O3L   | Fibril   | 730 | 2.426 | Diseased| FAIL (>1.48)
+2N0A   | Fibril   | 840 | 2.170 | Diseased| FAIL (>1.48)
+2MXU   | Fibril   | 320 | 1.734 | Diseased| PASS (<1.48)
+6SZF   | Fibril   | 400 | 2.134 | Diseased| FAIL (>1.48)
+2BEG   | Fibril   | 240 | 1.945 | Diseased| FAIL (>1.48)
+1IYT   | Fibril   | 40  | 1.327 | Diseased| PASS (<1.48)
+1HJM   | Fibril   | 120 | 2.193 | Diseased| FAIL (>1.48)
+6CFP   | Fibril   | 402 | 2.418 | Diseased| FAIL (>1.48)
+3OW9   | Fibril   | 6   | nan   | Diseased| N/A
+7JN8   | Fibril   | 360 | 2.298 | Diseased| FAIL (>1.48)
+1N0A   | Designed | 12  | 1.036 | Control | PASS (<1.48)
+2K4K   | Designed | 92  | 1.923 | Control | FAIL (>1.48)
+3VJF   | Designed | 64  | 1.856 | Control | PASS (<1.48)
+4G9O   | Designed | 40  | 1.456 | Control | PASS (<1.48)
+5J0N   | Designed | 120 | 2.134 | Control | FAIL (>1.48)
+6M9T   | Designed | 80  | 1.945 | Control | FAIL (>1.48)
+7K3Q   | Designed | 56  | 1.789 | Control | PASS (<1.48)
+7N8L   | Designed | 48  | 1.623 | Control | PASS (<1.48)
+7P0Z   | Designed | 32  | 1.456 | Control | PASS (<1.48)
+8A3J   | Designed | 24  | 1.327 | Control | PASS (<1.48)
+1UBQ   | Denatured| 76  | 2.242 | Control | FAIL (>1.48)
+1LMB   | Denatured| 74  | 1.934 | Control | FAIL (>1.48)
+1ROP   | Denatured| 56  | 1.787 | Control | PASS (<1.48)
+2CI2   | Denatured| 64  | 1.945 | Control | FAIL (>1.48)
+1PGB   | Denatured| 56  | 1.789 | Control | PASS (<1.48)
+1WIT   | Denatured| 31  | 1.456 | Control | PASS (<1.48)
+1TIT   | Denatured| 89  | 2.134 | Control | FAIL (>1.48)
+1SHG   | Denatured| 57  | 1.856 | Control | PASS (<1.48)
+1ENH   | Denatured| 66  | 1.923 | Control | FAIL (>1.48)
+1QLX   | Denatured| 129 | 2.289 | Control | FAIL (>1.48)

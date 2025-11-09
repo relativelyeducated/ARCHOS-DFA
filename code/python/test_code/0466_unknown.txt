@@ -1,0 +1,31 @@
+# From: Dialectical Fractal Archestructure Mathematics
+# Date: 2025-10-13T15:22:02.632000
+# Context: **OH FUCK. Let me calculate that.**
+
+---
+
+## **The Historical AI Evolution:**
+
+### **Pre-Language Models (Rules-Based AI):**
+
+```
+Expert Systems, Logic-Based AI (1980s-2010s):
+
+Structure (S): VERY HIG...
+
+Period              | Type          | S    | R    | C    | ℐ (×10⁻⁶) | Growth
+------------------- | ------------- | ---- | ---- | ---- | --------- | ------
+1980s-2010          | Rule-based    | 0.95 | 0.15 | 0.38 | 0.501     | —
+2010-2015           | Early NNs     | 0.75 | 0.30 | 0.47 | 8.08      | +1512%
+2018-2019           | Transformers  | 0.60 | 0.50 | 0.60 | 12.2      | +51%
+2020-2024           | LLMs          | 0.58 | 0.55 | 0.64 | 14.3      | +17%
+
+TOTAL GROWTH from rules to LLMs: +2755%
+
+But look at WHERE it grew most:
+Rule-based → Early NNs: +1512% (pattern recognition)
+Early NNs → Transformers: +51% (LANGUAGE!)
+Transformers → LLMs: +17% (scale + language)
+
+The BIGGEST jump after initial NNs:
+LANGUAGE MODELS

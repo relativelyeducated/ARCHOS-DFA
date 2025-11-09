@@ -1,0 +1,75 @@
+# From: Scripting Wireless Management in UniFi Networks
+# Date: 2025-11-06T09:54:32.594000
+# Context: Below is a **complete, ready-to-email document** (copy-paste into Word, Google Docs, or a plain-text email).  
+It contains **all scripts**, **setup steps**, **software requirements**, **links**, and *...
+
+<#=====================================================================
+  UniFi Student-Kick Script
+  • Kicks clients with inappropriate hostnames
+  • Kicks clients on a given SSID during restricted hours
+  • Logs to C:\UniFi\KickLog.txt
+=====================================================================#>
+
+# -------------------  CONFIGURATION  -------------------
+$Controller   = "https://127.0.0.1:8443"
+$ApiKey       = "YOUR_API_KEY_HERE"          # ← CHANGE THIS
+$Site         = "default"
+
+# Bad-name list (case-insensitive)
+$BadNames = @("sex", "porn", "drugs", "hack", "admin", "root", "f*ck", "sh*t")
+
+# Restricted SSID & time window (24-h format)
+$RestrictedSSID   = "Student-WiFi"
+$StartHour        = 17   # 5 PM
+$EndHour          =  7   # 7 AM next day
+
+$LogFile = "C:\UniFi\KickLog.txt"
+# ---------------------------------------------------------
+
+if (-not (Test-Path (Split-Path $LogFile))) { New-Item -ItemType Directory -Path (Split-Path $LogFile) -Force }
+
+function Write-Log {
+    param([string]$Msg)
+    $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    "$ts - $Msg" | Out-File -FilePath $LogFile -Append -Encoding utf8
+    Write-Host "$ts $Msg"
+}
+
+$headers = @{ "X-API-Key" = $ApiKey; "Content-Type" = "application/json" }
+
+function Get-Clients {
+    $url = "$Controller/api/s/$Site/stat/sta"
+    try {
+        $resp = Invoke-RestMethod -Uri $url -Headers $headers -Method Get -SkipCertificateCheck
+        return $resp.data
+    } catch { Write-Log "ERROR: $($_.Exception.Message)"; return @() }
+}
+
+function Kick-Client {
+    param([string]$Mac)
+    $url = "$Controller/api/s/$Site/cmd/stamgr"
+    $body = @{ cmd = "kick-sta"; mac = $Mac.ToLower() } | ConvertTo-Json
+    try {
+        Invoke-RestMethod -Uri $url -Headers $headers -Method Post -Body $body -SkipCertificateCheck | Out-Null
+        Write-Log "KICKED $Mac"
+    } catch { Write-Log "FAILED $Mac : $($_.Exception.Message)" }
+}
+
+$now = Get-Date; $hour = $now.Hour
+$inRestrictedWindow = ($hour -ge $StartHour) -or ($hour -lt $EndHour)
+$clients = Get-Clients
+
+foreach ($c in $clients) {
+    $mac = $c.mac; $hostname = ($c.hostname ?? "").Trim(); $ssid = $c.essid ?? ""
+
+    $bad = $false
+    foreach ($word in $BadNames) { if ($hostname -match "(?i)$word") { $bad = $true; break } }
+    if ($bad) { Write-Log "BAD NAME '$hostname' ($mac)"; Kick-Client $mac; continue }
+
+    if ($inRestrictedWindow -and $ssid -eq $RestrictedSSID) {
+        Write-Log "TIME RESTRICTION: $mac on $RestrictedSSID"
+        Kick-Client $mac
+    }
+}
+
+Write-Log "Scan complete. $($clients.Count) clients processed."

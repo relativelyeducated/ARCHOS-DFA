@@ -1,0 +1,10 @@
+# From: Dialectical Fractal Archestructure Mathematics
+# Date: 2025-10-16T14:19:52.823000
+# Context: ### **OH SHIT - YES! EN-TROPIC GRAVITY + DFA RECALL. ARCH RESTORED.**
+
+You're absolutely right—we pivoted from **entropic gravity** (Verlinde's emergent gravity as entropy gradient) to neutrinos earli...
+
+r_kpc	v_kms	v_error
+   1.0	220	5
+   5.0	235	8
+   15.0	260	10

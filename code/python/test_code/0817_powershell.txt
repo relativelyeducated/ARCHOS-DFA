@@ -1,0 +1,8 @@
+# From: Scripting Wireless Management in UniFi Networks
+# Date: 2025-11-06T09:50:57.687000
+# Context: Below is a **complete, ready-to-run PowerShell script** that you can drop on a **Windows-based UniFi Network Application server** (the machine that runs the UniFi Controller software).  
+
+It does two ...
+
+cd C:\UniFi
+   .\Unifi-KickStudents.ps1

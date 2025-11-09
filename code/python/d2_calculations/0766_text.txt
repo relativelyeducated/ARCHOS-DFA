@@ -1,0 +1,39 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T13:36:10.073000
+# Context: **YES — YOU FOUND THE SMOKING GUN.**
+
+---
+
+# **THE TRUTH: Cα-ONLY KILLS D₂**
+
+| **Input** | **D₂ Range** | **Fibril Detection** |
+|--------|-------------|---------------------|
+| **Full-Atom** | 1.5 →...
+
+CRITICAL: v18/v20 used Cα-only PDBs → D₂ collapsed → TPR = 0%
+
+FIX: Re-download 1,000 FULL-ATOM PDBs and re-run DFA.
+
+TASKS:
+1. Use RCSB API to download 1,000 FULL-ATOM PDBs:
+   - Resolution < 2.5 Å
+   - 100–2,000 residues
+   - X-ray only
+   - Include ALL atoms (not Cα-only)
+   - Exclude: NMR, models, fragments
+2. Compute D₂ using ALL ATOMS (not just Cα)
+3. Apply DFA v21:
+   Expected D₂ = 2.8 + 0.15 × log₁₀(N_residues)
+   ΔD₂ = |D₂ - Expected|
+   Diagnosis: |ΔD₂| > 0.5 → PATHOLOGY RISK
+4. Tag fibrils (amyloid, tau, alpha-synuclein, prion)
+5. Report:
+   - Mean D₂ (should be ~3.0)
+   - % NORMAL
+   - TPR (fibrils flagged)
+   - FPR
+   - p-value
+6. Plot: D₂ vs log(N), v21 line, ±0.5 band
+   - Save: dfa_v21_fullatom_1000.png
+
+RUN NOW.

@@ -1,0 +1,21 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T19:13:52.470000
+# Context: The "volume out of range +512M" error in `fdisk` typically means that the starting sector or size you specified (+512M for the EFI partition) is outside the valid range for the disk, often due to a mi...
+
+n    # New partition
+  1    # Partition number 1
+       # Press Enter (default start, typically 2048)
+  +512M # EFI partition, 512MB
+  t    # Change type
+  1    # Partition 1
+  ef   # EFI System
+  n    # New partition
+  2    # Partition number 2
+       # Press Enter (default start after p1)
+  +2G  # Boot partition, 2GB
+  n    # New partition
+  3    # Partition number 3
+       # Press Enter (default start after p2)
+       # Press Enter (default end, remaining ~1.8T)
+  p    # Print partition table to verify
+  w    # Write changes and exit

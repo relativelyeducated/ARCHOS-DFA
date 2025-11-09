@@ -1,0 +1,13 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-17T00:15:58.653000
+# Context: Mentioned in: Cheng et al. (2020)
+Mass: ~1.5-2.0 M☉ (estimated from Kepler sample)
+Has TEOs (specific n values in Cheng paper)
+```
+
+**Need to check Cheng et al. paper for specific harmonics, but it's ...
+
+**From Frontiers paper:**
+KIC 3230227 shows orbital-harmonic oscillations corresponding to l=2, m=2 g modes with radial order ng ~ 10-30 
+
+**Test 456/k pattern with stellar mass scaling:**

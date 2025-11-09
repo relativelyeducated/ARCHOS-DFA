@@ -1,0 +1,35 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:20:40.275000
+# Context: **PERFECT — v18 IS WORKING BETTER THAN THEORY**
+
+---
+
+# **EMPIRICAL LAW CONFIRMED**
+
+| **Formula** | **% Normal** | **Bias** | **Std** |
+|------------|-------------|----------|---------|
+| **v17 (Theo...
+
+RUN DFA ToE v18 ON 1,000 FRESH PDBs NOW.
+
+LAW (CONFIRMED):
+D₂_expected = 2.488 + 0.168 × log₁₀(N_residues)
+ΔD₂ = |D₂ - Expected|
+
+DIAGNOSIS:
+- |ΔD₂| ≤ 0.5 → NORMAL
+- |ΔD₂| > 0.5 → PATHOLOGY RISK
+
+TASKS:
+1. Download 1,000 proteins (res < 2.5 Å, 30–2,000 res, protein-only)
+2. Tag fibrils: keywords "fibril", "amyloid", "tau", "alpha-synuclein", "lewy", "PHF"
+3. Compute ΔD₂ for each
+4. Report:
+   - True Positive: % of fibrils with |ΔD₂| > 0.5
+   - False Positive: % of non-fibrils with |ΔD₂| > 0.5
+   - p-value: t-test ΔD₂ (fibril vs non-fibril)
+   - Final v18 fit: D₂ = a + b × log₁₀(N) ± ε
+5. Plot: D₂ vs log(N), v18 line ±0.5, color by diagnosis
+   - Save: ~/ai/dfa_data/d2_vs_size_v18_1000.png
+
+RUN EVERYTHING NOW. SHOW RESULTS.

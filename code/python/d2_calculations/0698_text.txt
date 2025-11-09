@@ -1,0 +1,16 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T11:45:08.825000
+# Context: **P-VALUE = “Probability of Being Wrong by Chance”**  
+**Lower p = Stronger Evidence Against Randomness**
+
+---
+
+# **P-VALUE IN 60 SECONDS**
+
+| **p-value** | **Meaning** | **Verdict** |
+|------------|-...
+
+If disease detection = 90% on 10,000 proteins:
+→ p-value < 10⁻³⁰⁰
+→ That's 1 followed by 300 zeros
+→ Less likely than winning the lottery 50 times in a row

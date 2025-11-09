@@ -1,0 +1,14 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-12T16:50:01.761000
+# Context: # BRIEFING DOCUMENT: ACCESS AND ANALYSIS OF ICECUBE HESE DATA.JSON FROM GITHUB
+
+---
+
+## CONTEXT & PURPOSE
+On October 12, 2025, at 4:47 PM EDT, you provided two GitHub raw links to IceCube High Energy ...
+
+HESE D₂ = 1.47 ± 0.12
+Low E D₂: 1.44, Mid E D₂: 1.47, High E D₂: 1.51
+Angular Correlation Slope: -0.46 (expected -0.45)
+Number of Clusters: 3
+Sample exported to hese_sample.csv

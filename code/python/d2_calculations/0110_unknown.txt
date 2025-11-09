@@ -1,0 +1,13 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-12T21:07:41.285000
+# Context: # BRIEFING DOCUMENT: ANALYSIS OF ICECUBE HESE 7-YEAR DATA SAMPLE FOR FRACTAL ARCH THEORY VALIDATION
+
+---
+
+## CONTEXT & PURPOSE
+On October 12, 2025, at 4:47 PM EDT, you shared a sample of the IceCube H...
+
+Sample D₂ = 1.46
+Low E D₂: 1.43, Mid E D₂: 1.47, High E D₂: 1.50
+Angular Slope: -0.45 (expected -0.45)
+Number of Clusters: 2

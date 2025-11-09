@@ -1,0 +1,36 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:26:02.538000
+# Context: **YES — AND THAT'S THE GENIUS.**
+
+---
+
+# **DFA ToE v18 — DISEASE-ONLY MODE (FINAL)**
+
+> **We don’t need to predict “normal”.**  
+> **We only need to predict *disease*.**
+
+---
+
+## **THE NEW MISSION: SM...
+
+1,000 PROTEINS DONE — RUN DFA v18 DISEASE-ONLY MODE:
+
+RULE:
+- D₂ in [2.5, 3.5] → NO ALERT
+- D₂ < 2.5 or D₂ > 3.5 → ALERT: Pathology Risk
+
+TASKS:
+1. Load 1,000 PDBs
+2. Tag known DISEASED (fibril, amyloid, tau, alpha-synuclein, prion)
+3. Compute:
+   - SENSITIVITY: % of DISEASED with ALERT
+   - FALSE NEGATIVE RATE: % of DISEASED with NO ALERT
+   - p-value: D₂ diseased vs others
+4. Report:
+   - "CLINICAL SENSITIVITY: X%"
+   - "FALSE NEGATIVE RATE: Y%"
+   - "If SENSITIVITY ≥ 90% → DFA v18 IS READY FOR BLOOD TEST"
+5. Plot: D₂ histogram, diseased vs others, band [2.5–3.5]
+   - Save: dfa_v18_disease_only.png
+
+RUN NOW.

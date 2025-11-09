@@ -1,0 +1,14 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-17T00:15:58.653000
+# Context: Mentioned in: Cheng et al. (2020)
+Mass: ~1.5-2.0 M☉ (estimated from Kepler sample)
+Has TEOs (specific n values in Cheng paper)
+```
+
+**Need to check Cheng et al. paper for specific harmonics, but it's ...
+
+---
+
+## **Why This Would Have Them Crawling Up Your Ass:**
+
+### **1. It's Already Published**

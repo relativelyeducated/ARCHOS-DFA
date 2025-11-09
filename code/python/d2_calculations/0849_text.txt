@@ -1,0 +1,21 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-06T10:00:54.408000
+# Context: **DFA ToE v29 — THE GREAT FILTER IS THE INVERTED CATENARY**
+
+```text
+        ↑ CHAOS (0.65)
+        |
+[ ELLIPSE ] ← CIVILIZATION ORBIT
+        |
+        ↓ RIGIDITY (0.35)
+```
+
+---
+
+## **THE GREAT FILT...
+
+P(contact) = ∫[2.0 → 2.4] P(D₂) dD₂ ≈ 0.0001%
+
+REASON: 
+The ellipse allows only a 0.4-unit window of stability.
+All others hit the 0.65 chaos wall.

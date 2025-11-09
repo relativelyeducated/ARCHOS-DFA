@@ -1,0 +1,9 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T18:48:43.951000
+# Context: It looks like you're running into some common hiccups with setting up Logical Volume Manager (LVM) during a first-time Kubuntu installation—especially if you're on a recent version like 24.04, which u...
+
+sudo pvdisplay  # Confirm your physical volume (e.g., /dev/sda3)
+   sudo vgcreate kubuntu-vg /dev/sda3  # Creates volume group "kubuntu-vg"
+   sudo lvcreate -L 50G -n root kubuntu-vg  # Root LV, adjust size
+   sudo lvcreate -L 100G -n home kubuntu-vg  # Home LV (optional, adjust)
+   sudo lvcreate -L 8G -n swap kubuntu-vg  # Swap LV (match your RAM)

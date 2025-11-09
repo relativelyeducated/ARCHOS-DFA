@@ -1,0 +1,22 @@
+# From: Python Setup: PyTorch Environment Configuration
+# Date: 2025-10-15T20:14:00.051000
+# Context: **PERFECT!** 🎯 **File is in `/home/king/Downloads/`** ✅
+
+## **STEP 1: Navigate to Downloads**
+```bash
+cd /home/king/Downloads/
+```
+
+## **STEP 2: Verify `data.dat` Exists**
+```bash
+ls -lh data.dat
+```
+...
+
+python3 -c "
+import torch
+data = torch.load('data.dat')
+print('✅ Neutrino data LOADED!')
+print('Shape:', getattr(data, 'shape', 'Unknown'))
+print('On GPU:', next(data.parameters()).is_cuda if hasattr(data, 'parameters') else 'Ready for GPU!')
+"

@@ -1,0 +1,6 @@
+# From: Ubuntu Boot Disk Preparation Guide
+# Date: 2025-10-15T14:27:54.821000
+# Context: ### Fixing PyTorch Install Error: Externally Managed Environment
+**Timestamp**: 3:27 PM EDT, Oct 15, 2025—Ubuntu 25.10’s PEP 668 restriction blocks system-wide `pip` installs. Let’s use a virtual envi...
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128

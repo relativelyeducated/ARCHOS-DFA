@@ -1,0 +1,19 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:22:30.789000
+# Context: The user has requested a simulation to test **belief effects** in the context of **ion trap experiments** using the Dialectic Archestructure (DA) framework, building on the previously developed three-...
+
+/DA-Quantum
+  ├── code/
+  │   └── quantum_da_sim.py  # Stern-Gerlach + ion trap
+  ├── data/
+  │   ├── raw_data_ion_trap.csv
+  │   └── summary_ion_trap.json
+  ├── plots/
+  │   ├── p_up_ion_trap_comparison.png
+  │   ├── surplus_time_ion_trap.png
+  │   ├── arch_histogram_ion_trap.png
+  │   ├── p_up_vs_dBdz_belief.png
+  │   ├── p_up_vs_time_belief.png
+  │   ├── p_up_vs_temperature_belief.png
+  │   ├── p_up_vs_purity_belief.png
+  ├── README.md

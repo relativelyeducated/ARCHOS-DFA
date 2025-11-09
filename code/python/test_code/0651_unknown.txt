@@ -1,0 +1,12 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T19:03:17.481000
+# Context: It sounds like you might have encountered an issue when running the `fdisk` command, and you're seeing just a `command` prompt or an error, which could mean the command didn't start properly or you’re...
+
+Welcome to fdisk (util-linux 2.38.1).
+  Changes will remain in memory only, until you decide to write them.
+  Be careful before using the write command.
+
+  Device does not contain a recognized partition table.
+  Created a new DOS disklabel with disk identifier 0x...
+
+  Command (m for help):

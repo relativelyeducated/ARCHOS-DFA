@@ -1,0 +1,12 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T03:33:51.179000
+# Context: **ΔD₂ Helix-Wise for 5O3L (Alzheimer’s Tau PHF)**
+
+---
+
+### **Structure Recap**
+- **PDB**: `5O3L`  
+- **Protein**: Paired Helical Filament (PHF) of Tau protein  
+- **Chains**: **10 identical chains (A...
+
+ΔD₂ = f(lipid_buffer)

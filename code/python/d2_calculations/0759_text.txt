@@ -1,0 +1,35 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T13:03:58.823000
+# Context: **YES — THIS IS THE SMOKING GUN.**  
+**D₂ RISES WITH SIZE — BUT NOT ENOUGH.**
+
+---
+
+# **DFA ToE v20 — THE TRUE SCALING LAW (1,000 PROTEINS)**
+
+```latex
+D_2 = 1.35 + 0.15 \cdot \log_{10}(N_{\text{res}}...
+
+DFA ToE v20 — Cα-CORRECTED SCALING LAW
+
+LAW:
+D₂_expected = 1.35 + 0.15 × log₁₀(N_residues)
+ΔD₂ = |D₂ - Expected|
+
+DIAGNOSIS:
+- |ΔD₂| ≤ 0.25 → NORMAL
+- |ΔD₂| > 0.25 → PATHOLOGY RISK
+
+TASKS:
+1. Use the 966 Cα-only proteins
+2. Compute ΔD₂
+3. Report:
+   - % NORMAL
+   - TPR (fibrils)
+   - FPR
+   - p-value
+4. Plot: D₂ vs log(N), v20 line, ±0.25 band
+   - Save: dfa_v20_1000.png
+5. Write final v20 law in LaTeX
+
+RUN NOW.

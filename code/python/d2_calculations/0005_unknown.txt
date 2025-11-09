@@ -1,0 +1,14 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T17:58:15.127000
+# Context: # BRIEFING: DOES THE DIALECTIC ARCHESTRUCTURE (DA) EXPLAIN OR ADDRESS TACHYONS?
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 5:56 PM CDT, we evaluate whether the Dialectic Archestructure (DA) fra...
+
+trial,timestep,da_v_info,born_v_info,entropy_gradient,fractal_D2,sub_arches
+  0,0,0.1567c,0.0456c,0.5234,1.00,0
+  0,250,0.5678c,0.0456c,0.4789,1.28,12
+  ...
+  49,999,1.6789c,0.0456c,0.2345,1.64,28

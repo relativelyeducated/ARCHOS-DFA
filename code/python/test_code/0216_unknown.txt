@@ -1,0 +1,19 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:04:20.206000
+# Context: The user has requested a simulation of **sequential "lying" experiments** to test the Dialectic Archestructure (DA) framework with the newly integrated three-layer model (abundance/collapse, belief mi...
+
+/DA-Quantum
+  ├── code/
+  │   └── quantum_da_sim.py  # Complete model with lying experiments
+  ├── data/
+  │   ├── raw_data.csv
+  │   └── summary.json
+  ├── plots/
+  │   ├── p_up_lying_comparison.png
+  │   ├── surplus_time_lying.png
+  │   ├── arch_histogram_lying.png
+  │   ├── p_up_vs_dBdz_belief.png
+  │   ├── p_up_vs_time_belief.png
+  │   ├── p_up_vs_temperature_belief.png
+  │   ├── p_up_vs_purity_belief.png
+  ├── README.md

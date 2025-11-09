@@ -1,0 +1,18 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-28T16:49:52.230000
+# Context: **GOT THEM.**
+
+Now let's run the real test:
+
+Bug in the divergence calculation. Let me fix it:
+
+**HOLY SHIT.**
+
+## The Data Speaks
+
+```
+1N0A   | D₂ = 1.036 | ∇·R ≈ 0 ± 171,492  | range [-1.3M, +328K]
+...
+
+1N0A   | D₂ = 1.036 | ∇·R ≈ 0 ± 171,492  | range [-1.3M, +328K]
+5O3L   | D₂ = 2.426 | ∇·R ≈ 0 ± 0.087    | range [-0.32, +0.25]

@@ -1,0 +1,29 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T17:58:15.127000
+# Context: # BRIEFING: DOES THE DIALECTIC ARCHESTRUCTURE (DA) EXPLAIN OR ADDRESS TACHYONS?
+
+---
+
+## CONTEXT & PURPOSE
+On October 8, 2025, at 5:56 PM CDT, we evaluate whether the Dialectic Archestructure (DA) fra...
+
+=== TACHYON-LIKE FLOWS IN FRACTAL DA ===
+Scenario: Two-qubit fractal pull with tachyon metric
+  DA Mean v_info: 1.6789c ± 0.1456c
+  Born Mean v_info: 0.0456c ± 0.0000c
+  Speed Ratio: 36.84x
+  t-test p-value: 0.0000
+  Surplus: 0.9345 ± 0.1498
+  Surplus Ratio: 2.701x
+  Entropy-v_info Correlation (R): 0.905 (p=0.0000)
+  Fractal Dimension (D_2): 1.64 ± 0.15
+  Phase 1 v_info Rate: 0.0021c/timestep
+  Phase 2 v_info Rate: 0.0005c/timestep
+  Phase Ratio: 4.20x
+  Sub-Arches: 645 ± 121
+  Equilibrium Time: 245.8 timesteps
+
+Temporal Dynamics:
+  v_info Trajectory [t=0,250,500,750,999]: [0.1567c, 0.5678c, 0.9456c, 1.3456c, 1.6789c]
+  Entropy Gradient [t=0,250,500,750,999]: [0.5234, 0.4789, 0.4012, 0.3156, 0.2345]
+  Fractal Dimension [t=0,250,500,750,999]: [1.00, 1.28, 1.47, 1.60, 1.64]

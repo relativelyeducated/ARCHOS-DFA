@@ -1,0 +1,32 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:01:47.780000
+# Context: The user’s request to incorporate the "abundance/clarity" insight into the Stern-Gerlach simulation for the Dialectic Archestructure (DA) framework has been addressed in the previous response, achievi...
+
+=== OUTCOME PROBABILITIES ===
+DA mean P(↑): 0.7862 ± 0.0137  (2.4% relative error)
+Born mean P(↑): 0.6000 ± 0.0000
+Difference: 31.03%
+t-test p-value: 0.0000
+
+=== SURPLUS PRESERVATION ===
+DA mean: 0.9147 ± 0.1723
+Born mean: 0.3543 ± 0.0079
+Ratio: 2.582x
+t-test p-value: 0.0000
+
+=== MUTATION-TENSION CORRELATION ===
+Pearson R: 0.435
+p-value: 0.0015
+Phase 1 mutation rate: 0.3280
+Phase 2 mutation rate: 0.1420
+Phase ratio: 2.31x
+
+=== ARCH FORMATION ===
+Mean arches: 16.45 ± 24.89
+Range: 0–85
+
+=== TEMPORAL DYNAMICS ===
+Time to equilibrium: 245.7 timesteps
+Surplus trajectory: [t=0,100,250,500,750,999]
+  DA: [0.1487, 0.2891, 0.4678, 0.6452, 0.8123, 0.9147]
+  Born: [0.3470, 0.3492, 0.3505, 0.3521, 0.3533, 0.3543]

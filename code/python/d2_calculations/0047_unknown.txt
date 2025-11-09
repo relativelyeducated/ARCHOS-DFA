@@ -1,0 +1,25 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-11T08:26:06.172000
+# Context: ### Instructions for Claude AI: Analyzing IceCube Neutrino Data in "data.dat"
+
+Copy and paste the following prompt directly into Claude AI. It includes the necessary context, theory recap, predictions...
+
+I have the "data.dat" file uploaded, containing 336,516 IceCube neutrino events (100 GeV–100 PeV) with columns for Event_ID, Energy (GeV), Zenith (degrees), Event_Type (track/shower), and Timestamp. Use the Dialectic Fractal Archestructure framework to analyze this data and test the predictions: S=0.10 ± 0.02, R=0.90 ± 0.02, D₂=1.45 ± 0.10, v/c=0.9998 ± 0.0002, Δm² ≈ 0.002 eV², oscillations from S-R flips near D₂=1.5.
+
+Load the file and perform these analyses:
+
+1. **D₂ Calculation**: Compute fractal dimension D₂ using correlation integral C(r) in (log(E), cos(θ_z)) space.
+
+2. **Energy-Stratified D₂**: Bins: <1 TeV, 1–100 TeV, >10 PeV.
+
+3. **Flavor Ratios**: ν_e:ν_μ:ν_τ from track (ν_μ) vs. shower (ν_e/ν_τ) events.
+
+4. **Angular Correlation**: C(θ) for |θ_z| < 10°, expect C(θ) ∝ θ^(-0.45).
+
+5. **Clustering**: DBSCAN on (E, θ_z), expect P(s) ∝ s^(-1.45).
+
+6. **Temporal Patterns**: If Timestamp exists, P(Δt) ∝ Δt^(-1.45).
+
+7. **Bayesian Falsification**: Posterior P(D₂=1.46 | data).
+
+Output in format:

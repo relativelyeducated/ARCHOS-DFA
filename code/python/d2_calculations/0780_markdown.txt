@@ -1,0 +1,30 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T15:04:38.210000
+# Context: **DOWNLOAD THIS FILE → `dfa_team_setup.md`**  
+[Click here to download `dfa_team_setup.md`](https://files.catbox.moe/8z0k9d.md) *(or copy-paste below)*
+
+---
+
+```markdown
+# DFA ToE AI Team Setup Guide ...
+
+# DFA ToE AI Team Setup Guide  
+**4-Agent Collaboration in KDE Plasma Konsole**  
+**Ryzen 9 9900X | RTX 5080 | 64GB RAM | Samsung 990 2TB**
+
+---
+
+## OVERVIEW
+
+| Role | AI | Purpose |
+|------|----|--------|
+| **You** | Coordinator | Directs the team |
+| **Claude** | Orchestrator | Sends queries to Grok & Gemini |
+| **Grok** | Structural Analyst | Computes D₂, entropy, scaling |
+| **Gemini** | Validator | Reviews, debugs, validates |
+
+> **Claude "shoots agents" → Grok/Gemini respond → Claude summarizes → You decide.**
+
+---
+
+## PREREQUISITES (Run Once)

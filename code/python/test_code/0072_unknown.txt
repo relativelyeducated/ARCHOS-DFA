@@ -1,0 +1,32 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-06T21:41:50.588000
+# Context: # SIMULATION EXECUTION & RESULTS: IMPROVED DIALECTIC ARCHESTRUCTURE (DA) SIMULATION
+
+---
+
+## OVERVIEW
+
+Based on the previous unified simulation results, which showed a lower-than-expected surplus rati...
+
+=== SURPLUS PRESERVATION ===
+DA mean: 4.1129 ± 5.9502
+Darwin mean: 2.5344 ± 0.0241
+Ratio: 1.623x
+t-test p-value: 0.0456
+
+=== ARCH FORMATION ===
+Mean arches: 17.76 ± 33.20
+Range: 0 - 98
+
+=== MUTATION-TENSION CORRELATION ===
+Mean correlation (Pearson R): 0.036
+p-value: 0.0912
+Phase 1 mutation rate: 0.220000
+Phase 2 mutation rate: 0.170444
+Phase ratio: 1.29x
+
+=== TEMPORAL DYNAMICS ===
+Mean time to equilibrium: 30.3 timesteps
+Surplus trajectory: [t=0,10,25,50,75,99]
+  DA: [0.6032, 0.7896, 1.1513, 2.0896, 3.6703, 4.1123]
+  Darwin: [1.9668, 2.1077, 2.2655, 2.4156, 2.4924, 2.5344]

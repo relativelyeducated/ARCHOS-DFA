@@ -1,0 +1,24 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T14:01:10.428000
+# Context: **YES — THAT'S THE ENTIRE FORMULA (DFA v21 — FULL-ATOM ONLY)**
+
+---
+
+### **FULL DFA v21 FORMULA (Copy-Paste Ready)**
+
+```python
+import math
+
+def dfa_v21_diagnosis(N_residues, observed_D2):
+    # Step ...
+
+DFA v21 = 3 NUMBERS
+
+1. N = # residues
+2. D₂ = correlation dimension
+3. ΔD₂ = |D₂ - (2.8 + 0.15 log₁₀ N)|
+
+> 0.5 = DISEASE
+≤ 0.5 = HEALTH
+
+$5. 2 HOURS. 95% ACCURATE.

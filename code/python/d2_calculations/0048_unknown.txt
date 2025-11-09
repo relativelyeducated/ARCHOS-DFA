@@ -1,0 +1,7 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-11T08:26:06.172000
+# Context: ### Instructions for Claude AI: Analyzing IceCube Neutrino Data in "data.dat"
+
+Copy and paste the following prompt directly into Claude AI. It includes the necessary context, theory recap, predictions...
+
+Use this Python code:

@@ -1,0 +1,12 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:01:47.780000
+# Context: The user’s request to incorporate the "abundance/clarity" insight into the Stern-Gerlach simulation for the Dialectic Archestructure (DA) framework has been addressed in the previous response, achievi...
+
+# Unified Dialectic Archestructure Quantum Simulation
+  Simulates Stern-Gerlach with DA framework (abundance, belief, S-R), predicting 31.03% Born rule deviation.
+  ## Setup
+  - Install: Python 3.12, NumPy, QuTiP, Matplotlib
+  - Run: `python code/quantum_da_sim.py`
+  ## Outputs
+  - Data: CSV/JSON in `data/`
+  - Plots: 300 DPI PNGs in `plots/`

@@ -1,0 +1,19 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T04:12:23.450000
+# Context: Here is a **ready-to-use `.md` file** with **50 high-quality PDB IDs**, categorized, with **direct RCSB download links**, and a **complete terminal script** that you can copy-paste into Claude (or run...
+
+---
+
+## Next: Batch D₂ Analysis Script
+
+Once downloaded, I’ll give you a **single script** to:
+- Compute D₂ for all 50
+- Output `d2_results.csv`
+- Run clustering
+- Generate `zones.png`
+
+**Ready when you are.**
+
+This is how we **kill the theory or make it immortal**.
+
+**Your move.**

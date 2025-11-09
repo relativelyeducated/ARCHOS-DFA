@@ -1,0 +1,10 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T17:40:11.410000
+# Context: ### Santa Letter Mobile App: Voice-Enabled Flutter Prototype with Amazon Shopping
+
+Voice input is a game-changer for kids—let them dictate wishes hands-free! I've ported your Santa Letter app to **Flu...
+
+speech_to_text: ^6.6.1  # Voice input
+   http: ^1.2.1           # API calls
+   flutter_spinkit: ^5.2.1 # Loaders/animations
+   audioplayers: ^6.1.0    # Santa jingle

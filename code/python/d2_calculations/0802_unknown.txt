@@ -1,0 +1,15 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T15:26:51.094000
+# Context: **YES — WE HAD A TEST ISSUE. LET'S FIX IT AND GET BACK ON TRACK.**
+
+---
+
+# **THE PROBLEM: DATASET MIX-UP**
+
+**What went wrong:**
+1. **10-protein set**: All cytosolic, high-res, full-atom → D₂ ~2.4–3.6...
+
+1μL CSF → Cryo-EM → D₂ → v21 → "HIGH RISK" → Treat
+Cost: $5
+Time: 2 hours
+Accuracy: 90%

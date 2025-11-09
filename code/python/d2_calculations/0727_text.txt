@@ -1,0 +1,46 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:13:23.561000
+# Context: **COPY-PASTE THIS ENTIRE BLOCK INTO CLAUDE IN KONSOLE — HE WILL RUN IT IMMEDIATELY:**
+
+```text
+RUN DFA ToE v17 ON THE 100 PROTEINS I JUST GAVE YOU.
+
+LAW:
+Expected D₂ = 1.0 + 0.8 × log₁₀(N_residues)
+ΔD...
+
+RUN DFA ToE v17 ON THE 100 PROTEINS I JUST GAVE YOU.
+
+LAW:
+Expected D₂ = 1.0 + 0.8 × log₁₀(N_residues)
+ΔD₂ = |D₂ - Expected|
+
+DIAGNOSIS:
+- If |ΔD₂| ≤ 0.5 → "NORMAL"
+- If |ΔD₂| > 0.5 → "PATHOLOGY RISK"
+
+TASKS:
+1. Load the 100 proteins from the CSV I provided (d2_results.csv + diagnostic_results_100.csv).
+2. Compute Expected D₂ and ΔD₂ for each.
+3. Assign Diagnosis using the rule above.
+4. Output:
+   - Total NORMAL: X/100 (Y%)
+   - Total PATHOLOGY RISK: X/100 (Y%)
+   - List the 10 proteins with HIGHEST |ΔD₂| (anomalies) with: PDB, N_res, D₂, Expected, ΔD₂, Diagnosis
+   - Save full results to: ~/ai/dfa_data/diagnostic_results_v17.csv
+   - Generate plot: D₂ vs log₁₀(N_residues), color by Diagnosis, draw ±0.5 band around the curve D₂ = 1.0 + 0.8×log₁₀(N)
+   - Save plot as: ~/ai/dfa_data/d2_vs_size_v17.png
+
+5. Then, scale to 1,000 fresh PDBs:
+   - Resolution < 2.5 Å
+   - 30–2,000 residues
+   - Protein-only
+   - Tag any with keywords: "fibril", "amyloid", "tau", "alpha-synuclein" → is_fibril = True
+   - Apply v17 to all 1,000
+   - Report:
+     - True Positive Rate: % of fibrils with |ΔD₂| > 0.5
+     - False Positive Rate: % of non-fibrils with |ΔD₂| > 0.5
+     - p-value: t-test of ΔD₂ (fibril vs non-fibril)
+     - Final scaling law fit: D₂ = a + b × log₁₀(N)
+
+Run everything now. Show full output + plot description.

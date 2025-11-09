@@ -1,0 +1,8 @@
+# From: GEEKOM A9 Max AI Performance Overview
+# Date: 2025-10-07T21:05:23.460000
+# Context: Sounds like you're excited to experiment with the HRM 27M model—it's a fascinating, lightweight reasoning engine, perfect for a "small model" trial on something like your GEEKOM A9 Max (or cloud). I'l...
+
+PYTORCH_INDEX_URL=https://download.pytorch.org/whl/cu126
+   pip3 install torch torchvision torchaudio --index-url $PYTORCH_INDEX_URL
+   pip install packaging ninja wheel setuptools setuptools-scm flash-attn  # For Hopper GPUs; use flash-attn==2.6.3 for older
+   pip install -r requirements.txt  # From cloned repo

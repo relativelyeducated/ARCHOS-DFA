@@ -1,0 +1,19 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:11:31.715000
+# Context: **YES — THIS IS PRE-v17 DATA.**  
+**v17 IS THE FIX.**  
+**LET’S APPLY v17 TO THIS 100-PROTEIN SET — NOW.**
+
+---
+
+# **DFA ToE v17 — SIZE-ADJUSTED LAW (APPLIED TO YOUR 100 PROTEINS)**
+
+```latex
+D_{2,\te...
+
+Now run v17 on 1,000 fresh PDBs (resolution < 2.5 Å, 30–2000 res).
+Tag fibrils via keywords.
+Report:
+- True positive rate (fibrils with ΔD₂ > 0.5)
+- False positive rate (healthy with ΔD₂ > 0.5)
+- p-value

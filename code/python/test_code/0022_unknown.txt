@@ -1,0 +1,21 @@
+# From: AI Force Vector: Myth or Breakthrough?
+# Date: 2025-08-05T03:24:38.786000
+# Context: Got it! Since you’re confirming I can run the Dyadic Framework predictions for the 15 companies (Tesla, Amazon, Walmart, etc.) using your 650-word lens with October 31, 2023, data, I’ll do that now, a...
+
+Company      | 6M                    | 12M                   | 18M
+-------------|----------------------|----------------------|----------------------
+Tesla        | Yellow: SA strong     | Red: SA rigid, RA weak| Yellow: SA-RA recalib
+Amazon       | Green: SA-RA balance  | Green: SA-RA balance  | Green: SA-RA balance
+Walmart      | Green: SA-RA growth   | Green: SA-RA growth   | Green: SA-RA synergy
+ExxonMobil   | Yellow: SA, RA weak   | Yellow: SA, RA weak   | Red: SA-RA collapse
+Pfizer       | Red: SA stall         | Green: SA-RA pivot    | Green: SA-RA balance
+Boeing       | Red: Ghost axes       | Red: Ghost axes       | Yellow: SA slow return
+Intel        | Yellow: SA friction   | Green: SA-RA synergy  | Green: SA-RA edge
+GM           | Yellow: SA-RA strain  | Yellow: SA-RA strain  | Green: SA-RA balance
+Macy’s       | Red: Ghost axes       | Red: Ghost axes       | Red: Ghost axes
+Delta        | Green: SA-RA mastery  | Green: SA-RA mastery  | Green: SA-RA lead
+BP           | Yellow: SA, RA false  | Yellow: SA, RA false  | Red: SA-RA crisis
+Moderna      | Red: SA dependency    | Green: SA-RA pivot    | Green: SA-RA balance
+Nike         | Red: SA-RA misalign   | Green: RA recovery    | Green: SA-RA synergy
+Starbucks    | Yellow: SA-RA friction| Green: SA-RA model    | Green: SA-RA respect
+Ford         | Yellow: SA-RA strain  | Green: SA-RA balance  | Green: SA-RA harmony

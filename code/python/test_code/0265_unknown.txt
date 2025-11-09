@@ -1,0 +1,14 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T14:27:55.475000
+# Context: # SUPERCONDUCTING QUBIT BELIEF EFFECTS SIMULATION BRIEFING
+
+---
+
+## CONTEXT & PURPOSE
+This briefing documents the computational simulation of belief effects in superconducting qubits (e.g., transmon q...
+
+trial,timestep,scenario,da_p_up,da_surplus,da_tension,da_mutation_occ,born_p_up,born_surplus
+  0,0,Lying_|→⟩,0.5000,0.1421,0.43,0,0.5000,0.3467
+  0,100,Lying_|→⟩,0.6102,0.2765,0.37,1,0.5000,0.3488
+  ...
+  49,999,Lying_|→⟩,0.7189,0.8921,0.18,0,0.5000,0.3541

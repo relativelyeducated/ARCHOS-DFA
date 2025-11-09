@@ -1,0 +1,6 @@
+# From: GEEKOM A9 Max AI Performance Overview
+# Date: 2025-10-07T21:08:10.056000
+# Context: Got it—since the Sapient HRM is purely a reasoning model without NLP or language generation, let's pivot to a true small language model (SLM) or lightweight LLM that handles natural language processin...
+
+ollama pull phi3.5-mini  # ~2-3GB download; quantized for speed
+   ollama run phi3.5-mini  # Chat mode: Type queries like "Summarize this text: [paste]"

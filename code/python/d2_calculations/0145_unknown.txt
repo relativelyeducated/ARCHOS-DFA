@@ -1,0 +1,49 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-09T00:19:00.992000
+# Context: Awesome, it sounds like you're fired up and ready to dive into the analysis on your PC! Since you’re grabbing your computer, I assume you’re gearing up to run the IceCube energy-dependent D₂ analysis ...
+
+======================================================================
+   ICEUBE ENERGY-DEPENDENT D₂ ANALYSIS
+   Testing D₂ → 1.50–1.52 at High Energies
+   ======================================================================
+   Total events: 336,516
+   Clean upward events (cos(zenith) < -0.1): [number]
+
+   📈 EVENT DISTRIBUTION:
+      Low Energy         <1 TeV             [number] events
+      Medium Energy      1-10 TeV          [number] events
+      High Energy        10-100 TeV        [number] events
+      Ultra-High Energy  >100 TeV          [number] events
+
+   ======================================================================
+   D₂ MEASUREMENTS BY ENERGY BIN
+   ======================================================================
+
+   🔬 Low Energy (<1 TeV):
+      Events: [number]
+      Mean Energy: [value] TeV
+      D₂ (measured): [value] ± [std]
+      D₂ (predicted): 1.4900
+      Δ = [difference]
+      [✅ MATCHES or ⚠️ DEVIATES]
+
+   [... similar for other bins ...]
+
+   ======================================================================
+   THRESHOLD APPROACH ANALYSIS
+   ======================================================================
+
+   📈 D₂ TREND:
+      Lowest Energy D₂: [value]
+      Highest Energy D₂: [value]
+      Range: [value]
+      Trend: [✅ INCREASING or ❌ NOT increasing]
+
+   🎯 FRAMEWORK PREDICTIONS:
+      Low Energy (~1 TeV): D₂ = 1.49 ± 0.06
+      High Energy (~10–100 TeV): D₂ = 1.50 ± 0.05
+      Ultra-High Energy (>100 TeV): D₂ = 1.52 ± 0.05
+
+   ======================================================================
+   [✅ CONFIRMED, ⚠️ PARTIAL, or ❌ NOT CONFIRMED]
+   ======================================================================

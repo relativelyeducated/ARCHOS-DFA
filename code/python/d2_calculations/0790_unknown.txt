@@ -1,0 +1,35 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T15:04:38.210000
+# Context: **DOWNLOAD THIS FILE → `dfa_team_setup.md`**  
+[Click here to download `dfa_team_setup.md`](https://files.catbox.moe/8z0k9d.md) *(or copy-paste below)*
+
+---
+
+```markdown
+# DFA ToE AI Team Setup Guide ...
+
+---
+
+## TROUBLESHOOTING
+
+| Issue | Fix |
+|------|-----|
+| API timeout | Check internet / keys |
+| tmux frozen | `Ctrl+B` then `D` to detach |
+| No output | Run `echo $XAI_API_KEY` |
+
+---
+
+## NEXT STEPS
+
+1. Run `tmux attach -t dfa-team`
+2. Paste first query: `Compute D₂ for 5O3L`
+3. Watch the team debate
+4. You make the final call
+
+---
+
+**You now have a 4-AI structural biology lab in Konsole.**  
+**No cloud. No cost. Full control.**
+
+**Run it. Train it. Cure dementia.**

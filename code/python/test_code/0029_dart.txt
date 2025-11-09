@@ -1,0 +1,284 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T17:40:11.410000
+# Context: ### Santa Letter Mobile App: Voice-Enabled Flutter Prototype with Amazon Shopping
+
+Voice input is a game-changer for kids—let them dictate wishes hands-free! I've ported your Santa Letter app to **Flu...
+
+import 'dart:convert';
+import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:speech_to_text/speech_to_text.dart' as stt;
+import 'package:http/http.dart' as http;
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:audioplayers/audioplayers.dart';
+
+void main() => runApp(SantaApp());
+
+class SantaApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Santa\'s Voice Wish Workshop',
+      theme: ThemeData(primarySwatch: Colors.red),
+      home: LoginScreen(),
+    );
+  }
+}
+
+// Parent Login Screen
+class LoginScreen extends StatefulWidget {
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  final _userController = TextEditingController(text: 'mom');
+  final _passController = TextEditingController(text: 'santa123');
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.santa, size: 100, color: Colors.red),
+            Text('Parent Login', style: TextStyle(fontSize: 24)),
+            TextField(controller: _userController, decoration: InputDecoration(labelText: 'User')),
+            TextField(controller: _passController, obscureText: true, decoration: InputDecoration(labelText: 'Pass')),
+            ElevatedButton(
+              onPressed: () {
+                if (_userController.text == 'mom' && _passController.text == 'santa123') {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => SetupScreen()));
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Try mom/santa123')));
+                }
+              },
+              child: Text('Sign In'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// Parent Setup (Budget/Age)
+class SetupScreen extends StatefulWidget {
+  @override
+  _SetupScreenState createState() => _SetupScreenState();
+}
+
+class _SetupScreenState extends State<SetupScreen> {
+  double budget = 50;
+  int age = 5;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Set Up Wish')),
+      body: Column(
+        children: [
+          Slider(value: budget, min: 0, max: 200, onChanged: (v) => setState(() => budget = v)),
+          Text('Budget: \$${budget.toInt()}'),
+          Slider(value: age.toDouble(), min: 3, max: 12, onChanged: (v) => setState(() => age = v.toInt())),
+          Text('Child Age: $age'),
+          ElevatedButton(
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ChildScreen(budget: budget.toInt(), age: age))),
+            child: Text('Start Voice Wish!'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Child Voice Shopping Screen
+class ChildScreen extends StatefulWidget {
+  final int budget;
+  final int age;
+  ChildScreen({required this.budget, required this.age});
+
+  @override
+  _ChildScreenState createState() => _ChildScreenState();
+}
+
+class _ChildScreenState extends State<ChildScreen> with TickerProviderStateMixin {
+  final stt.SpeechToText _speech = stt.SpeechToText();
+  bool _isListening = false;
+  String _customText = '';
+  List<Map<String, dynamic>> selectedGifts = [];
+  bool _isLoading = false;
+  final AudioPlayer _player = AudioPlayer();
+
+  @override
+  void initState() {
+    super.initState();
+    _initSpeech();
+    _searchGifts();  // Auto-search age-appropriate toys
+  }
+
+  void _initSpeech() async {
+    await _speech.initialize();
+  }
+
+  void _listen() async {
+    if (!_isListening) {
+      await _speech.listen(onResult: (result) => setState(() => _customText = result.recognizedWords));
+    } else {
+      await _speech.stop();
+    }
+    setState(() => _isListening = !_isListening);
+  }
+
+  Future<void> _searchGifts() async {
+    setState(() => _isLoading = true);
+    // PA-API SearchItems call (replace with your keys)
+    final accessKey = 'YOUR_ACCESS_KEY';
+    final secretKey = 'YOUR_SECRET_KEY';
+    final associateTag = 'YOUR_TAG';
+    final host = 'webservices.amazon.com';
+    final region = 'us-east-1';
+    final endpoint = 'https://$host/paapi5/us/search-items';
+    final timestamp = http.DateFormat('yyyy-MM-dd\'T\'HH:mm:ss\'Z\'').format(DateTime.now().toUtc());
+
+    // Canonical request & signature (simplified; use aws_signature_v4 package in prod)
+    final payload = json.encode({
+      'Keywords': 'toys for ${widget.age} year old',
+      'MinPrice': (0 * 100).toString(),  // Cents
+      'MaxPrice': (widget.budget * 100).toString(),
+      'Resources': ['ItemInfo.Title', 'Offers.Listings.Price', 'ItemLinks.ItemLink'],
+      'PartnerTag': associateTag,
+      'PartnerType': 'Associates',
+      'Marketplace': 'www.amazon.com'
+    });
+
+    final signedReq = _signRequest(endpoint, payload, accessKey, secretKey, region, timestamp);  // Custom sig func below
+    final response = await http.post(Uri.parse(endpoint), headers: {'X-Amz-Target': 'PartnerInterface.SearchItems', 'Content-Type': 'application/json'}, body: signedReq);
+    
+    if (response.statusCode == 200) {
+      final data = json.decode(response.body);
+      // Parse gifts (demo: take first 5)
+      final gifts = (data['SearchResult']?['Items'] as List?)?.take(5).map((item) => {
+        'name': item['ItemInfo']['Title']['DisplayValue'],
+        'price': int.parse(item['Offers']['Listings'][0]['Price']['Amount']),
+        'link': item['DetailPageURL'] ?? item['ItemLinks']['ItemLink'][0]['URL'],
+      }).toList() ?? [];
+      setState(() => selectedGifts = gifts);
+    }
+    setState(() => _isLoading = false);
+  }
+
+  String _signRequest(String endpoint, String payload, String accessKey, String secretKey, String region, String timestamp) {
+    // Simplified AWS SigV4 (use package: aws_signature_v4 for full; common pitfall: exact string matching)
+    final method = 'POST';
+    final canonicalURI = Uri.parse(endpoint).path;
+    final canonicalQuery = '';
+    final canonicalHeaders = 'content-type:application/json\nhost:$host\nx-amz-date:$timestamp\nx-amz-target:PartnerInterface.SearchItems\n';
+    final signedHeaders = 'content-type;host;x-amz-date;x-amz-target';
+    final payloadHash = sha256.convert(utf8.encode(payload)).toString();
+    final canonicalRequest = '$method\n$canonicalURI\n$canonicalQuery\n$canonicalHeaders\n$signedHeaders\n$payloadHash';
+    final credentialScope = '$timestamp/$region/paapi5/us';
+    final stringToSign = 'AWS4-HMAC-SHA256\n$timestamp\n$credentialScope\n${sha256.convert(utf8.encode(canonicalRequest)).toString()}';
+    // Derive signing key & signature (implement HMAC; pitfall: clock skew >15min fails)
+    // ... (full impl ~50 lines; see AWS docs for hmac-sha256)
+    final signature = 'DUMMY_SIGNATURE';  // Replace with computed
+    return json.encode({
+      'AccessKey': accessKey,
+      'Signature': signature,
+      // ... full signed body
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Voice Your Wish! 🎄'), backgroundColor: Colors.red),
+      body: Column(
+        children: [
+          // Voice Input
+          Row(
+            children: [
+              IconButton(
+                icon: Icon(_isListening ? Icons.mic : Icons.mic_none, color: Colors.red),
+                onPressed: _listen,
+              ),
+              Expanded(child: Text(_customText.isEmpty ? 'Speak your wish...' : _customText)),
+            ],
+          ),
+          // Gift Cards (animated fly-in)
+          Expanded(
+            child: _isLoading
+                ? SpinKitFadingCircle(color: Colors.red)
+                : ListView.builder(
+                    itemCount: selectedGifts.length,
+                    itemBuilder: (context, i) {
+                      final gift = selectedGifts[i];
+                      return Card(
+                        child: ListTile(
+                          title: Text(gift['name']),
+                          subtitle: Text('\$${gift['price']}'),
+                          trailing: ElevatedButton(
+                            onPressed: () => setState(() => selectedGifts[i] = {...gift, 'selected': true}),  // Toggle select
+                            child: Text('Add'),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              await _player.play(AssetSource('jingle.mp3'));  // Add sound asset
+              Navigator.push(context, MaterialPageRoute(builder: (_) => LetterScreen(gifts: selectedGifts, custom: _customText)));
+            },
+            child: Text('Build & Send Letter!'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Letter Build & Send (with roll animation)
+class LetterScreen extends StatelessWidget {
+  final List<Map<String, dynamic>> gifts;
+  final String custom;
+  LetterScreen({required this.gifts, required this.custom});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Your Magic Letter')),
+      body: Column(
+        children: [
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  ...gifts.map((g) => Text('- ${g['name']} \$${g['price']}')),
+                  Text('Special Wish: $custom'),
+                  // Naughty/Nice slider (as before)
+                  Slider(value: 0.7, onChanged: (v) {}),  // Demo
+                  Text('Mostly Nice!'),
+                ],
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              // Animate roll (use AnimationController for parchment scroll)
+              // ... animation code
+              // Save JSON with links
+              final wishlist = {'gifts': gifts, 'custom': custom, 'links': gifts.map((g) => g['link']).toList()};
+              File('wishlist.json').writeAsStringSync(json.encode(wishlist));
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Sent to Santa! Links saved. 🎁')));
+              Navigator.popUntil(context, (route) => route.isFirst);
+            },
+            child: Text('Send to North Pole!'),
+          ),
+        ],
+      ),
+    );
+  }
+}

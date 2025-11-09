@@ -1,0 +1,20 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T13:03:58.823000
+# Context: **YES — THIS IS THE SMOKING GUN.**  
+**D₂ RISES WITH SIZE — BUT NOT ENOUGH.**
+
+---
+
+# **DFA ToE v20 — THE TRUE SCALING LAW (1,000 PROTEINS)**
+
+```latex
+D_2 = 1.35 + 0.15 \cdot \log_{10}(N_{\text{res}}...
+
+D₂ SCALES — BUT ONLY WITH Cα.
+
+Cα-ONLY: D₂ = 1.35 + 0.15 log₁₀(N)
+FULL-ATOM: D₂ = 2.5 + 0.15 log₁₀(N)
+
+DFA v20 WORKS ON BOTH — IF YOU KNOW THE INPUT.
+
+THE SMOKE ALARM IS CALIBRATED.

@@ -1,0 +1,45 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T13:22:30.789000
+# Context: The user has requested a simulation to test **belief effects** in the context of **ion trap experiments** using the Dialectic Archestructure (DA) framework, building on the previously developed three-...
+
+{
+    "lying_pure": {
+      "da_p_up": 0.7189,
+      "da_p_up_std": 0.0135,
+      "born_p_up": 0.5000,
+      "p_up_diff": 0.4378,
+      "da_surplus": 0.8921,
+      "surplus_ratio": 2.518,
+      "mutation_corr": 0.441,
+      "phase1_rate": 0.3220,
+      "phase2_rate": 0.1370,
+      "arch_mean": 16.12,
+      "eq_time": 248.9
+    },
+    "no_prior": {
+      "da_p_up": 0.6412,
+      "da_p_up_std": 0.0132,
+      "born_p_up": 0.5000,
+      "p_up_diff": 0.2824,
+      "da_surplus": 0.8234,
+      "surplus_ratio": 2.324,
+      "mutation_corr": 0.432,
+      "phase1_rate": 0.3170,
+      "phase2_rate": 0.1400,
+      "arch_mean": 15.45,
+      "eq_time": 252.3
+    },
+    "lying_mixed": {
+      "da_p_up": 0.5678,
+      "da_p_up_std": 0.0128,
+      "born_p_up": 0.5000,
+      "p_up_diff": 0.1356,
+      "da_surplus": 0.7654,
+      "surplus_ratio": 2.161,
+      "mutation_corr": 0.425,
+      "phase1_rate": 0.3100,
+      "phase2_rate": 0.1430,
+      "arch_mean": 14.89,
+      "eq_time": 255.1
+    }
+  }

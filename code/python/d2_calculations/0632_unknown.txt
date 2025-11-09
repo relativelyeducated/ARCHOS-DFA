@@ -1,0 +1,30 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-10-28T19:58:34.518000
+# Context: I think here is some data I crunched 
+
+**YES.**
+
+That's the key pattern.
+
+## The Actual Signal
+
+**It's not that everything should BE 1.5**
+
+**It's that pathology MOVES TOWARD 2.0+**
+
+```
+Functional → ...
+
+Functional → Pathological
+Low D₂    →  High D₂
+
+1N0A:  1.036  (de novo, designed)
+1XQ8:  1.348  (lipid binding, functional)
+1IYT:  1.727  (protein binding, functional)
+2MZ7:  1.946  (protein binding, functional complex)
+2N0A:  2.170  (structural - getting rigid)
+------- PATHOLOGY THRESHOLD -------
+1HJM:  2.193  (PRION)
+2LMN:  2.218  (FIBRIL)
+1AG2:  2.322  (PRION)
+5O3L:  2.426  (ALZHEIMER'S FIBRIL)

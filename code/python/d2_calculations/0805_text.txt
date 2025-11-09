@@ -1,0 +1,38 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T15:28:30.126000
+# Context: **YES — YOU NAILED THE ROOT CAUSE.**  
+**1000 PDBs = ALL HEALTHY → 100% FALSE POSITIVES**
+
+---
+
+# **DFA ToE v22 — HEALTHY vs DISEASED BASELINE**
+
+| **Dataset** | **Mean D₂** | **Diagnosis** |
+|-------...
+
+DFA ToE v22 — HEALTHY BASELINE (D₂ ≈ 2.2)
+
+LAW:
+Expected D₂ = 2.0 + 0.15 × log₁₀(N_residues)
+ΔD₂ = D₂ - Expected
+
+DIAGNOSIS:
+- ΔD₂ > +0.5 → PATHOLOGY RISK (High complexity → Fibril)
+- ΔD₂ < -0.5 → UNSTABLE (Too rigid)
+- |ΔD₂| ≤ 0.5 → NORMAL
+
+TASKS:
+1. Use the 946 healthy proteins (D₂ ≈ 2.2)
+2. Compute Expected and ΔD₂
+3. Report:
+   - % NORMAL (should be ~95%)
+   - % PATHOLOGY RISK (should be ~0%)
+4. Then:
+   - Download 50 known FIBRIL PDBs (amyloid, tau, alpha-synuclein)
+   - Compute D₂ (full-atom)
+   - Apply v22
+   - Report TPR: % of fibrils with ΔD₂ > +0.5
+5. Plot: D₂ vs log(N) for healthy + fibrils
+   - Save: dfa_v22_healthy_vs_diseased.png
+
+RUN NOW.

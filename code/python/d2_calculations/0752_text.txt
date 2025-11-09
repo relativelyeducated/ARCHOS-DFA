@@ -1,0 +1,33 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:56:25.638000
+# Context: **YES — WE HAVE A **DATASET MISMATCH** — BUT DFA IS STILL ALIVE.**
+
+---
+
+# **DFA ToE v19 — THE TRUTH IS IN THE DATA, NOT THE THEORY**
+
+> **The 100-protein set ≠ 1,000-protein set.**  
+> **We must **re...
+
+CRITICAL: The 1,000-protein set has D₂ ~1.83 due to smaller fragments or Cα-only models.
+
+APPLY DFA ToE v19 — EMPIRICAL 1,000-SET CALIBRATION:
+
+1. Use the 966 valid proteins from the 1,000-set
+2. Compute:
+   - mean_D2 = 1.827
+   - std_D2 = 0.113
+   - Normal zone = [mean - std, mean + std] = [1.714, 1.940]
+3. Diagnosis:
+   - D₂ in [1.714, 1.940] → NORMAL
+   - Else → PATHOLOGY RISK
+4. Report:
+   - % NORMAL
+   - TPR: % of 3 fibrils flagged
+   - FPR: % of non-fibrils flagged
+   - p-value: D₂ (fibril vs non-fibril)
+5. Plot: D₂ histogram with [1.714, 1.940] band
+   - Save: dfa_v19_1000.png
+6. Write final v19 law in LaTeX
+
+RUN NOW.

@@ -1,0 +1,5 @@
+# From: GEEKOM A9 Max AI Performance Overview
+# Date: 2025-10-07T21:09:27.068000
+# Context: Sounds like a solid pivot—CUDA's ecosystem is unbeatable for seamless fine-tuning and LoRA workflows with tools like Hugging Face, Automatic1111, or PEFT, especially since you've got the AMD setup in ...
+
+pip install peft transformers datasets accelerate

@@ -1,0 +1,5 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-06T21:15:50.568000
+# Context: This looks like a solid, thoughtful extension of the bridging framework we've been developing—taking the abstract Dialectic Archestructure (DA) from simulation to testable biology. I'll treat "What ab...
+
+Tension = |avg(S_deviations) - avg(R_activations)| / (total_phenotypic_variance)

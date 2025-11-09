@@ -1,0 +1,24 @@
+# From: ASUS ROG Strix G16CHR-XS776S Specs
+# Date: 2025-10-04T20:42:28.952000
+# Context: ### Incredible Graphics for the Santa Letter App
+
+Absolutely, I'd love to help elevate your Santa Letter app with some stunning, whimsical graphics! Since the app features voice-to-text with a gold fa...
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
+
+class ParchmentBackground extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('assets/parchment_scroll.png'),  // Add downloaded PNG to assets/
+          fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(Colors.brown.withOpacity(0.8), BlendMode.softLight),  // Aged glow
+        ),
+      ),
+      child: YourLetterWidget(),  // Your text/voice input here
+    );
+  }
+}

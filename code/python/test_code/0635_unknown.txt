@@ -1,0 +1,5 @@
+# From: Fixing Ubuntu NetworkManager Boot Failure
+# Date: 2025-10-18T20:21:49.777000
+# Context: Creating a hard Ethernet connection might help resolve the NetworkManager-wait-online.service issue by ensuring a stable network during boot. Since you're in recovery mode with only `snap` commands, y...
+
+snap reboot

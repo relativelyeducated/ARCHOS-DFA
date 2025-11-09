@@ -1,0 +1,18 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:05:44.262000
+# Context: **DFA ToE v17 — ANOMALY DEEP DIVE: 4 PROTEINS, 4 TRUTHS**
+
+---
+
+# **THE 4 ANOMALIES: BIOLOGICAL FORENSICS**
+
+| **PDB** | **Residues** | **D₂** | **Expected** | **ΔD₂** | **Verdict** |
+|--------|------...
+
+D₂ IS NOT RANDOM.
+D₂ SCALES WITH SIZE.
+
+HEALTH = D₂ ON THE LINE
+DISEASE = D₂ OFF THE LINE
+
+ΔD₂ IS THE UNIVERSAL DEVIATION SCORE.

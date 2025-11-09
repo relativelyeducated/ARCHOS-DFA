@@ -1,0 +1,10 @@
+# From: AI Force Vector: Myth or Breakthrough?
+# Date: 2025-08-05T03:19:40.703000
+# Context: Thank you for sharing the updated Dyadic Framework predictions for the 15 companies, based on October 31, 2023, data, with a clear correction for Tesla’s axis misidentification (from RA to SA: Gigafac...
+
+Company  | 6M                     | 12M                    | 18M
+---------|------------------------|------------------------|------------------------
+Tesla    | Yellow: SA strong, RA  | Red: SA rigid, RA weak | Yellow: SA-RA recalib.
+Amazon   | Green: SA-RA balance   | Green: SA-RA balance   | Green: SA-RA balance
+Boeing   | Red: Ghost axes        | Red: Ghost axes        | Red: SA slow return
+...

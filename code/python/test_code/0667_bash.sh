@@ -1,0 +1,5 @@
+# From: Kubuntu LVM Setup Guide
+# Date: 2025-10-20T19:08:37.289000
+# Context: Yes, based on the earlier `lsblk -f` output you shared, your 2TB Samsung 990 PRO NVMe (`/dev/nvme0n1`) currently has two partitions (`nvme0n1p1` and `nvme0n1p2`) from the previous setup (likely the cr...
+
+lsblk

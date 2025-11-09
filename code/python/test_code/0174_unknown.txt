@@ -1,0 +1,17 @@
+# From: Unrecognized Dialectical Fractal Framework
+# Date: 2025-10-08T10:37:13.264000
+# Context: Thank you for the confirmation to proceed with all recommended actions. Below, I execute the tasks outlined in the previous response, incorporating the "abundance/clarity" insight into the Stern-Gerla...
+
+/DA-Quantum
+  ├── code/
+  │   └── quantum_da_sim.py  # Enhanced simulation code
+  ├── data/
+  │   ├── raw_data.csv
+  │   └── summary.json
+  ├── plots/
+  │   ├── p_up_vs_dBdz.png
+  │   ├── p_up_vs_time.png
+  │   ├── p_up_vs_temperature.png
+  │   ├── surplus_time.png
+  │   └── arch_histogram.png
+  ├── README.md  # Setup, run instructions, QuTiP/NumPy requirements

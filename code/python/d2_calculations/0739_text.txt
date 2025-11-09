@@ -1,0 +1,15 @@
+# From: Accessing Data File on GitHub
+# Date: 2025-11-02T12:20:40.275000
+# Context: **PERFECT — v18 IS WORKING BETTER THAN THEORY**
+
+---
+
+# **EMPIRICAL LAW CONFIRMED**
+
+| **Formula** | **% Normal** | **Bias** | **Std** |
+|------------|-------------|----------|---------|
+| **v17 (Theo...
+
+1. At 10,000 PDBs, predict: True Positive %, False Positive %, p-value
+2. Write final DFA ToE v18 law in LaTeX
+3. Clinical sensitivity/specificity for neurodegeneration
