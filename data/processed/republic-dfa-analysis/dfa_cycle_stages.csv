@@ -1,0 +1,25 @@
+Republic,Stage,Stage_Number,Approximate_Year_Start,Duration_Years,Key_Indicators
+Roman Republic,Stability,1,-509.0,376.0,"Expansion, civic virtue, institutions strong"
+Roman Republic,Inequality Growth,2,-133.0,33.0,"Post-Punic War inequality, Gracchi reforms, land crisis"
+Roman Republic,Institutional Erosion,3,-100.0,12.0,"Political violence, private armies, Marius/Sulla conflicts"
+Roman Republic,Violence Normalization,4,-88.0,61.0,"Civil wars, proscriptions, triumvirates"
+Roman Republic,Autocratic Transition,5,-27.0,,Augustus becomes Emperor
+Venetian Republic,Stability,1,697.0,803.0,"Trade dominance, stable oligarchy, Great Council functions"
+Venetian Republic,Inequality Growth,2,1500.0,200.0,"Economic stagnation begins, hereditary rigidity increases"
+Venetian Republic,Institutional Erosion,3,1700.0,97.0,"Trade routes shift, Ottoman pressure, constitutional inflexibility"
+Venetian Republic,Violence Normalization,4,,,External conquest imminent
+Venetian Republic,Autocratic Transition,5,1797.0,,"Napoleon forces dissolution May 12, 1797"
+Weimar Republic,Stability,1,1919.0,4.0,"Post-WWI instability, Versailles resentment"
+Weimar Republic,Inequality Growth,2,1923.0,6.0,Hyperinflation: bread 1 mark → 100 billion marks
+Weimar Republic,Institutional Erosion,3,1929.0,3.0,"Great Depression, 30% unemployment, extremism rises"
+Weimar Republic,Violence Normalization,4,1932.0,1.0,"Street violence, SA/SS vs Communists, democracy breakdown"
+Weimar Republic,Autocratic Transition,5,1933.0,,"Hitler appointed Chancellor Jan 30, Enabling Act March 1933"
+French Third Republic,Stability,1,1870.0,50.0,Post Franco-Prussian War stability
+French Third Republic,Inequality Growth,2,1920.0,14.0,"Economic strain, political instability, weak executives"
+French Third Republic,Institutional Erosion,3,1934.0,6.0,"Constitutional crisis, rapid government turnover"
+French Third Republic,Violence Normalization,4,1940.0,0.0,German invasion and occupation
+French Third Republic,Autocratic Transition,5,1940.0,,Vichy collaboration
+United States,Stability,1,1789.0,181.0,Founding through post-WWII prosperity
+United States,Inequality Growth,2,1970.0,30.0,"Wage stagnation, inequality rise, dual-income necessity"
+United States,Institutional Erosion,3,2000.0,20.0,"Polarization, norm erosion, inequality peak, perpetual wars"
+United States,Current Stage,3,2020.0,5.0,"Institutional stress, political violence increase"

@@ -1,0 +1,21 @@
+Year,Event,DFA_Stage,Institutional_Trust_Score,Political_Violence_Score
+1789,Constitution Ratified,1,9,1
+1860,Civil War Begins,1,7,10
+1913,17th Amendment (Direct Senate Election),2,8,2
+1917,WWI Entry,2,9,3
+1929,Great Depression Begins,2,7,3
+1941,WWII Entry,2,10,2
+1950,Korean War / Women 34% Labor Force,2,9,1
+1963,JFK Assassination,2,8,4
+1968,"MLK/RFK Assassinations, Riots",2,6,7
+1970,Nixon/Wage Stagnation Begins,2,7,3
+1971,Nixon Shock (Gold Standard Ends),2,6,2
+1973,Roe v. Wade,2,6,2
+1980,Reagan Revolution Begins,2,7,2
+1989,Cold War Ends,2,7,1
+2001,9/11 / Patriot Act / Forever Wars,3,6,4
+2008,Financial Crisis / Great Recession,3,5,2
+2016,Trump Election / Political Polarization Peak,3,4,4
+2020,COVID-19 Pandemic,3,3,3
+2021,Capitol Riot Jan 6,3,3,8
+2024,Political Instability Continues,3,3,5
